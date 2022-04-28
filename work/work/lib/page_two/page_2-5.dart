@@ -7,8 +7,8 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n中式', '\r\n日式', '\r\n泰式', '\r\n甜的', '\r\n鹹的', '\r\n不餓'];
-var sentence = ['我今天想吃中式', '我今天想吃日式', '我今天想吃泰式', '我今天想吃甜的', '我今天想吃鹹的', '我現在還不餓'];
+var list = ['\r\n珍珠奶茶', '\r\n紅茶拿鐵', '\r\n鐵觀音拿鐵', '\r\n檸檬蜜', '\r\n蜂蜜綠茶', '\r\n金桔茶'];
+var sentence = ['我今天想喝珍珠奶茶', '我今天想喝紅茶拿鐵', '我今天想喝鐵觀音拿鐵', '我今天想喝檸檬蜜', '我今天想喝蜂蜜綠茶', '我今天想喝金桔茶'];
 var box_color=Colors.lightGreen;
 class Page_2_5 extends StatefulWidget {
   const Page_2_5({Key? key}) : super(key: key);
@@ -59,7 +59,7 @@ class _Page_2_5 extends State<Page_2_5> {
                     child: TextButton.icon(
                       style: TextButton.styleFrom(
                         primary: Colors.black,
-                        backgroundColor:box_color,
+                        backgroundColor: box_color,
                         minimumSize: Size(125, 125),
                       ),
                       icon: Icon(
@@ -68,13 +68,48 @@ class _Page_2_5 extends State<Page_2_5> {
                       ),
                       label: Text(
                         list[0],
-                        //textAlign: TextAlign.center,
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () async {
+                        // 得到 TextField 中輸入的 value
+                        String strings = sentence[0];
+                        // 如果為空則 return
+                        if (strings.isEmpty) return;
+                        // connect to text2speech socket
+                        // The default is man voice.
+                        // If you want a female's voice, put "female" into the parameter.
+                        // parameter: call back function, speech synthesized text, (female)
+                        print(sentence[0]);
+                        if (Language == "中文") {
+                          if (sex == 'female') {
+                            //List<Map<String, String>> g = await Text2SpeechFlutter().flutterTts.getVoices;
+                            //print(g);
+                            Text2SpeechFlutter()
+                                .flutterTts
+                                .setVoice({"ssmlGender": "cmn-TW-Standard-A"});
+                            print(await Text2SpeechFlutter()
+                                .flutterTts
+                                .getVoices);
+
+                            await Text2SpeechFlutter().speak(strings);
+                          } else {
+                            Text2SpeechFlutter()
+                                .flutterTts
+                                .setVoice({"name": "ta-in-x-taf-network"});
+                            await Text2SpeechFlutter().speak(strings);
+                          }
+                        } else {
+                          await Text2Speech().connect(play, strings, sex);
+                          // player.init();
+                          setState(() {
+                            // player.isPlaying;
+                          });
+                        }
+                      },
                     ),
                   ),
                 ),

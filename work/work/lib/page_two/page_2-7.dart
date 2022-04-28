@@ -7,17 +7,17 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n法國生牛肉塔', '\r\n西式兔肉噸飯', '\r\n香煎鴨胸', '\r\n紅酒燉牛肉', '\r\n生蠔 ', '\r\n淡菜鍋'];
-var sentence = ['我今天想吃法國生牛肉塔', '我今天想吃西式兔肉噸飯', '我今天想吃香煎鴨胸', '我今天想吃紅酒燉牛肉', '我今天想吃生蠔', '我今天想吃淡菜鍋'];
+var list = ['\r\n彎彎', '\r\n一小時', '\r\n兩小時', '\r\n剛吃', '\r\n休息', '\r\n吃藥不餓'];
+var sentence = ['我現在不餓', '我可能要再一小時才會餓', '我可能要再兩小時才會餓', '我其實剛剛已經吃嘞', '我想要先去休息 暫時先不吃', '我剛剛吃藥所以沒什麼食慾'];
 var box_color=Colors.lightGreen;
-class Page_2_3 extends StatefulWidget {
-  const Page_2_3({Key? key}) : super(key: key);
+class Page_2_7 extends StatefulWidget {
+  const Page_2_7({Key? key}) : super(key: key);
 
   @override
-  State<Page_2_3> createState() => _Page_2_3();
+  State<Page_2_7> createState() => _Page_2_7();
 }
 
-class _Page_2_3 extends State<Page_2_3> {
+class _Page_2_7 extends State<Page_2_7> {
   final player = SoundPlayer();
   final myController = TextEditingController();
 
@@ -45,7 +45,7 @@ class _Page_2_3 extends State<Page_2_3> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 2-3"),
+        title: Text("Page 2-7"),
         backgroundColor: Colors.green,
       ),
       body: Column(
@@ -59,7 +59,7 @@ class _Page_2_3 extends State<Page_2_3> {
                     child: TextButton.icon(
                       style: TextButton.styleFrom(
                         primary: Colors.black,
-                        backgroundColor: box_color,
+                        backgroundColor:box_color,
                         minimumSize: Size(125, 125),
                       ),
                       icon: Icon(
@@ -68,48 +68,13 @@ class _Page_2_3 extends State<Page_2_3> {
                       ),
                       label: Text(
                         list[0],
-                        textAlign: TextAlign.center,
+                        //textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-                      onPressed: () async {
-                        // 得到 TextField 中輸入的 value
-                        String strings = sentence[0];
-                        // 如果為空則 return
-                        if (strings.isEmpty) return;
-                        // connect to text2speech socket
-                        // The default is man voice.
-                        // If you want a female's voice, put "female" into the parameter.
-                        // parameter: call back function, speech synthesized text, (female)
-                        print(sentence[0]);
-                        if (Language == "中文") {
-                          if (sex == 'female') {
-                            //List<Map<String, String>> g = await Text2SpeechFlutter().flutterTts.getVoices;
-                            //print(g);
-                            Text2SpeechFlutter()
-                                .flutterTts
-                                .setVoice({"ssmlGender": "cmn-TW-Standard-A"});
-                            print(await Text2SpeechFlutter()
-                                .flutterTts
-                                .getVoices);
-
-                            await Text2SpeechFlutter().speak(strings);
-                          } else {
-                            Text2SpeechFlutter()
-                                .flutterTts
-                                .setVoice({"name": "ta-in-x-taf-network"});
-                            await Text2SpeechFlutter().speak(strings);
-                          }
-                        } else {
-                          await Text2Speech().connect(play, strings, sex);
-                          // player.init();
-                          setState(() {
-                            // player.isPlaying;
-                          });
-                        }
-                      },
+                      onPressed: () {},
                     ),
                   ),
                 ),
@@ -445,7 +410,7 @@ class _Page_2_3 extends State<Page_2_3> {
   }
 }
 
-class Page_2_3_Setting extends StatelessWidget {
+class Page_2_7_Setting extends StatelessWidget {
   final myController = [
     TextEditingController(),
     TextEditingController(),

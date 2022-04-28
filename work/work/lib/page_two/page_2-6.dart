@@ -7,8 +7,8 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n中式', '\r\n日式', '\r\n泰式', '\r\n甜的', '\r\n鹹的', '\r\n不餓'];
-var sentence = ['我今天想吃中式', '我今天想吃日式', '我今天想吃泰式', '我今天想吃甜的', '我今天想吃鹹的', '我現在還不餓'];
+var list = ['\r\n現在', '\r\n一小時', '\r\n兩小時', '\r\n剛吃', '\r\n休息', '\r\n吃藥不餓'];
+var sentence = ['我現在不餓', '我可能要再一小時才會餓', '我可能要再兩小時才會餓', '我其實剛剛已經吃嘞', '我想要先去休息 暫時先不吃', '我剛剛吃藥所以沒什麼食慾'];
 var box_color=Colors.lightGreen;
 class Page_2_6 extends StatefulWidget {
   const Page_2_6({Key? key}) : super(key: key);

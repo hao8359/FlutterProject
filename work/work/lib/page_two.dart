@@ -6,15 +6,19 @@ import 'page_two/page_2-3.dart';
 import 'page_two/page_2-4.dart';
 import 'page_two/page_2-5.dart';
 import 'page_two/page_2-6.dart';
+import 'page_two/page_2-7.dart';
+import 'page_two/page_2-8.dart';
 
-var list = ['\r\n中式', '\r\n日式', '\r\n歐式', '\r\n甜的', '\r\n鹹的', '\r\n不餓'];
+var list = ['\r\n中式', '\r\n日式', '\r\n歐式', '\r\n甜的', '\r\n手搖飲', '\r\n不餓','\r\n印度式','\r\n英式','\r\n水煮餐','\r\n藥物'];
 var setting = [
   Page_2_1_Setting(),
   Page_2_2_Setting(),
   Page_2_3_Setting(),
   Page_2_4_Setting(),
   Page_2_5_Setting(),
-  Page_2_6_Setting()
+  Page_2_6_Setting(),
+  Page_2_7_Setting(),
+  Page_2_8_Setting(),
 ];
 var box_color=Colors.lightGreen;
 class PageTwo extends StatefulWidget {
@@ -215,6 +219,134 @@ class _PageTwo extends State<PageTwo> {
                     icon: Image.asset('assets/full.png', height: 50,width: 50,),
                     label: Text(
                       list[5],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_2_6()));
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: box_color,
+                      minimumSize: Size(125, 125),
+                    ),
+                    // icon: Icon(
+                    //   Icons.insert_emoticon,
+                    //   size: 50.0,
+                    // ),
+                    icon: Image.asset('assets/salt.png', height: 50,width: 50,),
+                    label: Text(
+                      list[6],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_2_7()));
+                    },
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: box_color,
+                      minimumSize: Size(125, 125),
+                    ),
+                    // icon: Icon(
+                    //   Icons.insert_emoticon,
+                    //   size: 50.0,
+                    // ),
+                    icon: Image.asset('assets/full.png', height: 50,width: 50,),
+                    label: Text(
+                      list[7],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_2_8()));
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: box_color,
+                      minimumSize: Size(125, 125),
+                    ),
+                    // icon: Icon(
+                    //   Icons.insert_emoticon,
+                    //   size: 50.0,
+                    // ),
+                    icon: Image.asset('assets/salt.png', height: 50,width: 50,),
+                    label: Text(
+                      list[8],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_2_5()));
+                    },
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: box_color,
+                      minimumSize: Size(125, 125),
+                    ),
+                    // icon: Icon(
+                    //   Icons.insert_emoticon,
+                    //   size: 50.0,
+                    // ),
+                    icon: Image.asset('assets/full.png', height: 50,width: 50,),
+                    label: Text(
+                      list[9],
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 24.0,

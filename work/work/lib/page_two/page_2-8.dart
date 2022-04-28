@@ -7,17 +7,17 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n法國生牛肉塔', '\r\n西式兔肉噸飯', '\r\n香煎鴨胸', '\r\n紅酒燉牛肉', '\r\n生蠔 ', '\r\n淡菜鍋'];
-var sentence = ['我今天想吃法國生牛肉塔', '我今天想吃西式兔肉噸飯', '我今天想吃香煎鴨胸', '我今天想吃紅酒燉牛肉', '我今天想吃生蠔', '我今天想吃淡菜鍋'];
+var list = ['\r\n馬卡龍', '\r\n千層酥', '\r\n可麗露', '\r\n熔岩巧克力', '\r\n冰淇淋', '\r\n蘋果塔'];
+var sentence = ['我今天想吃馬卡龍', '我今天想吃千層酥', '我今天想吃可麗露', '我今天想吃熔岩巧克力', '我今天想吃冰淇淋', '我今天想吃蘋果塔'];
 var box_color=Colors.lightGreen;
-class Page_2_3 extends StatefulWidget {
-  const Page_2_3({Key? key}) : super(key: key);
+class Page_2_8 extends StatefulWidget {
+  const Page_2_8({Key? key}) : super(key: key);
 
   @override
-  State<Page_2_3> createState() => _Page_2_3();
+  State<Page_2_8> createState() => _Page_2_8();
 }
 
-class _Page_2_3 extends State<Page_2_3> {
+class _Page_2_8 extends State<Page_2_8> {
   final player = SoundPlayer();
   final myController = TextEditingController();
 
@@ -45,7 +45,7 @@ class _Page_2_3 extends State<Page_2_3> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 2-3"),
+        title: Text("Page 2-8"),
         backgroundColor: Colors.green,
       ),
       body: Column(
@@ -445,7 +445,7 @@ class _Page_2_3 extends State<Page_2_3> {
   }
 }
 
-class Page_2_3_Setting extends StatelessWidget {
+class Page_2_8_Setting extends StatelessWidget {
   final myController = [
     TextEditingController(),
     TextEditingController(),

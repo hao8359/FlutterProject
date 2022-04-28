@@ -7,7 +7,7 @@ import 'page_three/page_3-4.dart';
 import 'page_three/page_3-5.dart';
 import 'page_three/page_3-6.dart';
 
-var list = ['\r\n醫院', '\r\n海邊', '\r\n山上', '\r\n便利商店', '\r\n超市', '\r\n菜市場'];
+var list = ['\r\n醫院', '\r\n海邊', '\r\n山上', '\r\n便利商店', '\r\n超市', '\r\n菜市場','\r\n交通','\r\n百貨公司','\r\n機場','\r\n家'];
 var setting = [
   Page_3_1_Setting(),
   Page_3_2_Setting(),
@@ -215,6 +215,134 @@ class _PageThree extends State<PageThree> {
                     icon: Image.asset('assets/market.png', height: 50,width: 50,),
                     label: Text(
                       list[5],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_3_6()));
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: box_color,
+                      minimumSize: Size(125, 125),
+                    ),
+                    // icon: Icon(
+                    //   Icons.insert_emoticon,
+                    //   size: 50.0,
+                    // ),
+                    icon: Image.asset('assets/cart.png', height: 50,width: 50,),
+                    label: Text(
+                      list[6],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_3_5()));
+                    },
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: box_color,
+                      minimumSize: Size(125, 125),
+                    ),
+                    // icon: Icon(
+                    //   Icons.insert_emoticon,
+                    //   size: 50.0,
+                    // ),
+                    icon: Image.asset('assets/market.png', height: 50,width: 50,),
+                    label: Text(
+                      list[7],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_3_6()));
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: box_color,
+                      minimumSize: Size(125, 125),
+                    ),
+                    // icon: Icon(
+                    //   Icons.insert_emoticon,
+                    //   size: 50.0,
+                    // ),
+                    icon: Image.asset('assets/cart.png', height: 50,width: 50,),
+                    label: Text(
+                      list[8],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_3_5()));
+                    },
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: box_color,
+                      minimumSize: Size(125, 125),
+                    ),
+                    // icon: Icon(
+                    //   Icons.insert_emoticon,
+                    //   size: 50.0,
+                    // ),
+                    icon: Image.asset('assets/market.png', height: 50,width: 50,),
+                    label: Text(
+                      list[9],
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 24.0,

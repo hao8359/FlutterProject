@@ -7,7 +7,7 @@ import 'page_one/page_1-4.dart';
 import 'page_one/page_1-5.dart';
 import 'page_one/page_1-6.dart';
 
-var list = ['\r\n高興', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣'];
+var list = ['\r\n高興', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣','\r\n滿足','\r\n恐懼','\r\n忌妒','\r\n崇拜'];
 var setting = [
   Page_1_1_Setting(),
   Page_1_2_Setting(),
@@ -224,6 +224,134 @@ class _PageOne extends State<PageOne> {
                     onPressed: () {
                       Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => Page_1_6()));
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.lightBlue,
+                      minimumSize: Size(125, 125),
+                    ),
+                    icon: Icon(
+                      Icons.insert_emoticon,
+                      size: 50.0,
+                    ),
+                    // icon: Image.asset('assets/sad-face.png', height: 50,width: 50,),
+                    label: Text(
+                      list[6],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      // Navigator.of(context).push(
+                      //     MaterialPageRoute(builder: (context) => Page_1_7()));
+                    },
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.lightBlue,
+                      minimumSize: Size(125, 125),
+                    ),
+                    icon: Icon(
+                      Icons.insert_emoticon,
+                      size: 50.0,
+                    ),
+                    // icon: Image.asset('assets/disappointed.png', height: 50,width: 50,),
+                    label: Text(
+                      list[7],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      // Navigator.of(context).push(
+                      //     MaterialPageRoute(builder: (context) => Page_1_8()));
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.lightBlue,
+                      minimumSize: Size(125, 125),
+                    ),
+                    icon: Icon(
+                      Icons.insert_emoticon,
+                      size: 50.0,
+                    ),
+                    // icon: Image.asset('assets/sad-face.png', height: 50,width: 50,),
+                    label: Text(
+                      list[8],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_1_3()));
+                    },
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.lightBlue,
+                      minimumSize: Size(125, 125),
+                    ),
+                    icon: Icon(
+                      Icons.insert_emoticon,
+                      size: 50.0,
+                    ),
+                    // icon: Image.asset('assets/disappointed.png', height: 50,width: 50,),
+                    label: Text(
+                      list[9],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Page_1_4()));
                     },
                   ),
                 ),
