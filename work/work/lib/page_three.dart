@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-import 'page_three/page_3-1.dart';
-import 'page_three/page_3-2.dart';
-import 'page_three/page_3-3.dart';
-import 'page_three/page_3-4.dart';
-import 'page_three/page_3-5.dart';
-import 'page_three/page_3-6.dart';
+import 'page_three_third/page_3-1.dart';
+import 'page_three_third/page_3-2.dart';
+import 'page_three_third/page_3-3.dart';
+import 'page_three_third/page_3-4.dart';
+import 'page_three_third/page_3-5.dart';
+import 'page_three_third/page_3-6.dart';
 
 var list = ['\r\n醫院', '\r\n海邊', '\r\n山上', '\r\n便利商店', '\r\n超市', '\r\n菜市場','\r\n交通','\r\n百貨公司','\r\n機場','\r\n家'];
 var setting = [

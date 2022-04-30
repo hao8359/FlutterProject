@@ -3,7 +3,8 @@ import 'package:flutter/services.dart';
 import 'page_one.dart';
 import 'page_two.dart';
 import 'page_three.dart';
-//import 'page_four.dart';
+import 'page_four.dart';
+import 'page_five.dart';
 import 'flutter_tts.dart';
 var color=[Colors.blue,Colors.green,Colors.amber,Colors.purple];
 void main() {
@@ -21,13 +22,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: Scaffold(
-      //   body: SingleChildScrollView(
-      //     child: ListView.builder(
-      //       scrollDirection: Axis.vertical,
-      //     ),
-      //   )
-      // ),
       debugShowCheckedModeBanner: false,
       title: 'My App',
       initialRoute: '/', //加route
@@ -64,17 +58,22 @@ class _IndexState extends State<MyHomePage> {
       icon: Icon(Icons.location_on),
       title: Text("地點"),
     ),
+    BottomNavigationBarItem(
+      backgroundColor: Colors.purple,
+      icon: Icon(Icons.person),
+      title: Text("自行輸入"),
+    ),
     // BottomNavigationBarItem(
-    //   backgroundColor: Colors.purple,
+    //   backgroundColor: Colors.greenAccent,
     //   icon: Icon(Icons.person),
-    //   title: Text("自行輸入"),
+    //   title: Text("測試"),
     // ),
   ];
 
   int currentIndex = 0;
 
-  //final pages = [PageOne(), PageTwo(), PageThree(), PageFour()];
-  final pages = [PageOne(), PageTwo(), PageThree()];
+  final pages = [PageOne(), PageTwo(), PageThree(), PageFour()];
+  //final pages = [PageOne(), PageTwo(), PageThree(),PageFour(),PageFive()];
   @override
   void initState() {
     super.initState();
@@ -144,12 +143,17 @@ class _SettingIndexState extends State<SettingPage> {
       icon: Icon(Icons.person),
       title: Text("自行輸入"),
     ),
+    // BottomNavigationBarItem(
+    //   backgroundColor: Colors.purple,
+    //   icon: Icon(Icons.person),
+    //   title: Text("測試"),
+    // ),
   ];
 
   int currentIndex = 0;
 
-  //final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting()];
-  final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting()];
+  final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting()];
+  //final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting(), PageFive_Setting()];
   @override
   void initState() {
     super.initState();

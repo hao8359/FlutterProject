@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
-import '../page_four.dart';
+import '../../page_four.dart';
 import 'dart:io';
-import '../sound_player.dart';
+import '../../sound_player.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
-import '../socket_tts.dart';
-import '../flutter_tts.dart';
+import '../../socket_tts.dart';
+import '../../flutter_tts.dart';
 
-var list = ['\r\n高興', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣'];
+var list = ['\r\n不要', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣'];
 var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣'];
 
-class Page_1_1 extends StatefulWidget {
-  const Page_1_1({Key? key}) : super(key: key);
+
+class Page_1_1_4 extends StatefulWidget {
+  const Page_1_1_4({Key? key}) : super(key: key);
 
   @override
-  State<Page_1_1> createState() => _Page_1_1();
+  State<Page_1_1_4> createState() => _Page_1_1_4();
 }
 
-class _Page_1_1 extends State<Page_1_1> {
+class _Page_1_1_4 extends State<Page_1_1_4> {
   final player = SoundPlayer();
   final myController = TextEditingController();
 
@@ -45,7 +46,7 @@ class _Page_1_1 extends State<Page_1_1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 1-1"),
+        title: Text("Page 1-2-second"),
       ),
       body: Column(
         children: [
@@ -74,6 +75,9 @@ class _Page_1_1 extends State<Page_1_1> {
                         ),
                       ),
                       onPressed: () {},
+                      //   Navigator.of(context).push(
+                      //   MaterialPageRoute(builder: (context) => Page_1_1_second()));
+                      // },
                     ),
                   ),
                 ),
@@ -409,7 +413,7 @@ class _Page_1_1 extends State<Page_1_1> {
   }
 }
 
-class Page_1_1_Setting extends StatelessWidget {
+class Page_1_1_4_Setting extends StatelessWidget {
   final myController = [
     TextEditingController(),
     TextEditingController(),

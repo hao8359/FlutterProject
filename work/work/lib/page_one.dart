@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-import 'page_one/page_1-1.dart';
-import 'page_one/page_1-2.dart';
-import 'page_one/page_1-3.dart';
-import 'page_one/page_1-4.dart';
-import 'page_one/page_1-5.dart';
-import 'page_one/page_1-6.dart';
+import 'page_one_2nd/page_1-1.dart';
+import 'page_one_2nd/page_1-2.dart';
+import 'page_one_2nd/page_1-3.dart';
+import 'page_one_2nd/page_1-4.dart';
+import 'page_one_2nd/page_1-5.dart';
+import 'page_one_2nd/page_1-6.dart';
 
 var list = ['\r\n高興', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣','\r\n滿足','\r\n恐懼','\r\n忌妒','\r\n崇拜'];
 var setting = [
