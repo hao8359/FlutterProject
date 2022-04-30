@@ -7,7 +7,18 @@ import 'page_one/page_1-4.dart';
 import 'page_one/page_1-5.dart';
 import 'page_one/page_1-6.dart';
 
-var list = ['\r\n高興', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣','\r\n滿足','\r\n恐懼','\r\n忌妒','\r\n崇拜'];
+var list = [
+  '\r\n高興',
+  '\r\n難過',
+  '\r\n沮喪',
+  '\r\n無聊',
+  '\r\n寂寞',
+  '\r\n生氣',
+  '\r\n滿足',
+  '\r\n害怕',
+  '\r\n忌妒',
+  '\r\n崇拜'
+];
 var setting = [
   Page_1_1_Setting(),
   Page_1_2_Setting(),
@@ -34,9 +45,11 @@ class _PageOne extends State<PageOne> {
   void dispose() {
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Column(
+
       children: [
         Expanded(
           child: Row(
@@ -54,7 +67,11 @@ class _PageOne extends State<PageOne> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/happy.png', height: 50,width: 50,),
+                    icon: Image.asset(
+                      'assets/happy.png',
+                      height: 50,
+                      width: 50,
+                    ),
 
                     label: Text(
                       list[0],
@@ -84,7 +101,11 @@ class _PageOne extends State<PageOne> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/crying.png', height: 50,width: 50,),
+                    icon: Image.asset(
+                      'assets/crying.png',
+                      height: 50,
+                      width: 50,
+                    ),
                     label: Text(
                       list[1],
                       textAlign: TextAlign.center,
@@ -119,7 +140,11 @@ class _PageOne extends State<PageOne> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/sad-face.png', height: 50,width: 50,),
+                    icon: Image.asset(
+                      'assets/sad-face.png',
+                      height: 50,
+                      width: 50,
+                    ),
                     label: Text(
                       list[2],
                       textAlign: TextAlign.center,
@@ -148,7 +173,11 @@ class _PageOne extends State<PageOne> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/disappointed.png', height: 50,width: 50,),
+                    icon: Image.asset(
+                      'assets/disappointed.png',
+                      height: 50,
+                      width: 50,
+                    ),
                     label: Text(
                       list[3],
                       textAlign: TextAlign.center,
@@ -183,7 +212,11 @@ class _PageOne extends State<PageOne> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/lonely.png', height: 50,width: 50,),
+                    icon: Image.asset(
+                      'assets/lonely.png',
+                      height: 50,
+                      width: 50,
+                    ),
                     label: Text(
                       list[4],
                       textAlign: TextAlign.center,
@@ -212,7 +245,11 @@ class _PageOne extends State<PageOne> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/angry-face.png', height: 50,width: 50,),
+                    icon: Image.asset(
+                      'assets/angry-face.png',
+                      height: 50,
+                      width: 50,
+                    ),
                     label: Text(
                       list[5],
                       textAlign: TextAlign.center,
@@ -359,7 +396,7 @@ class _PageOne extends State<PageOne> {
             ],
           ),
         ),
-      ],
+      ],),
     );
   }
 }
