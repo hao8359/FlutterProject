@@ -3,6 +3,8 @@ import 'package:final_try/page_one_2nd/page_1-1_3rd/page1-1-3.dart';
 import 'package:final_try/page_one_2nd/page_1-1_3rd/page1-1-4.dart';
 import 'package:final_try/page_one_2nd/page_1-1_3rd/page1-1-5.dart';
 import 'package:final_try/page_one_2nd/page_1-1_3rd/page1-1-6.dart';
+import 'package:final_try/page_one_2nd/page_1-1_3rd/page1-1-7.dart';
+import 'package:final_try/page_one_2nd/page_1-1_3rd/page1-1-8.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'page_1-1_3rd/page1-1-1.dart';
@@ -15,15 +17,17 @@ import '../socket_tts.dart';
 import '../flutter_tts.dart';
 import 'package:flutter/material.dart';
 
-var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣'];
+var list = ['\r\n設計與規劃學', '\r\n社會學', '\r\n醫學', '\r\n管理學', '\r\n電資學', '\r\n文學','\r\n工學', '\r\n其他學'];
+var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣','今天有點寂寞', '今天有點生氣'];
 var setting = [
   Page_1_1_1_Setting(),
   Page_1_1_2_Setting(),
   Page_1_1_3_Setting(),
   Page_1_1_4_Setting(),
   Page_1_1_5_Setting(),
-  Page_1_1_6_Setting()
+  Page_1_1_6_Setting(),
+  Page_1_1_7_Setting(),
+  Page_1_1_8_Setting()
 ];
 
 class Page_1_1 extends StatefulWidget {
@@ -61,9 +65,10 @@ class _Page_1_1 extends State<Page_1_1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 1-1"),
+        title: Text("教育"),
       ),
-      body: Column(
+      body: SingleChildScrollView(
+        child: ListBody(
         children: [
           Expanded(
             child: Row(
@@ -77,10 +82,11 @@ class _Page_1_1 extends State<Page_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/design.png', height: 70,width: 70,),
                       label: Text(
                         list[0],
                         //textAlign: TextAlign.center,
@@ -105,10 +111,11 @@ class _Page_1_1 extends State<Page_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/sociology.png', height: 70,width: 70,),
                       label: Text(
                         list[1],
                         textAlign: TextAlign.center,
@@ -173,10 +180,11 @@ class _Page_1_1 extends State<Page_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/doctor.png', height: 70,width: 70,),
                       label: Text(
                         list[2],
                         textAlign: TextAlign.center,
@@ -235,10 +243,11 @@ class _Page_1_1 extends State<Page_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/management.png', height: 70,width: 70,),
                       label: Text(
                         list[3],
                         textAlign: TextAlign.center,
@@ -303,10 +312,11 @@ class _Page_1_1 extends State<Page_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/computer.png', height: 70,width: 70,),
                       label: Text(
                         list[4],
                         textAlign: TextAlign.center,
@@ -365,10 +375,11 @@ class _Page_1_1 extends State<Page_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/literature.png', height: 70,width: 70,),
                       label: Text(
                         list[5],
                         textAlign: TextAlign.center,
@@ -421,6 +432,138 @@ class _Page_1_1 extends State<Page_1_1> {
               ],
             ),
           ),
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: TextButton.icon(
+                      style: TextButton.styleFrom(
+                        primary: Colors.black,
+                        backgroundColor: Colors.lightBlue,
+                        minimumSize: Size(125, 125),
+                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/science.png', height: 70,width: 70,),
+                      label: Text(
+                        list[6],
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      onPressed: () async {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Page_1_1_7()));
+                        // 得到 TextField 中輸入的 value
+                        String strings = sentence[6];
+                        // 如果為空則 return
+                        if (strings.isEmpty) return;
+                        // connect to text2speech socket
+                        // The default is man voice.
+                        // If you want a female's voice, put "female" into the parameter.
+                        // parameter: call back function, speech synthesized text, (female)
+                        print(sentence[6]);
+                        if (Language == "中文") {
+                          if (sex == 'female') {
+                            //List<Map<String, String>> g = await Text2SpeechFlutter().flutterTts.getVoices;
+                            //print(g);
+                            Text2SpeechFlutter()
+                                .flutterTts
+                                .setVoice({"ssmlGender": "cmn-TW-Standard-A"});
+                            print(await Text2SpeechFlutter()
+                                .flutterTts
+                                .getVoices);
+
+                            await Text2SpeechFlutter().speak(strings);
+                          } else {
+                            Text2SpeechFlutter()
+                                .flutterTts
+                                .setVoice({"name": "ta-in-x-taf-network"});
+                            await Text2SpeechFlutter().speak(strings);
+                          }
+                        } else {
+                          await Text2Speech().connect(play, strings, sex);
+                          // player.init();
+                          setState(() {
+                            // player.isPlaying;
+                          });
+                        }
+                      },
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: TextButton.icon(
+                      style: TextButton.styleFrom(
+                        primary: Colors.black,
+                        backgroundColor: Colors.lightBlue,
+                        minimumSize: Size(125, 125),
+                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/other.png', height: 70,width: 70,),
+                      label: Text(
+                        list[7],
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      onPressed: () async {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Page_1_1_8()));
+                        // 得到 TextField 中輸入的 value
+                        String strings = sentence[7];
+                        // 如果為空則 return
+                        if (strings.isEmpty) return;
+                        // connect to text2speech socket
+                        // The default is man voice.
+                        // If you want a female's voice, put "female" into the parameter.
+                        // parameter: call back function, speech synthesized text, (female)
+                        print(sentence[7]);
+                        if (Language == "中文") {
+                          if (sex == 'female') {
+                            //List<Map<String, String>> g = await Text2SpeechFlutter().flutterTts.getVoices;
+                            //print(g);
+                            Text2SpeechFlutter()
+                                .flutterTts
+                                .setVoice({"ssmlGender": "cmn-TW-Standard-A"});
+                            print(await Text2SpeechFlutter()
+                                .flutterTts
+                                .getVoices);
+
+                            await Text2SpeechFlutter().speak(strings);
+                          } else {
+                            Text2SpeechFlutter()
+                                .flutterTts
+                                .setVoice({"name": "ta-in-x-taf-network"});
+                            await Text2SpeechFlutter().speak(strings);
+                          }
+                        } else {
+                          await Text2Speech().connect(play, strings, sex);
+                          // player.init();
+                          setState(() {
+                            // player.isPlaying;
+                          });
+                        }
+                      },
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: TextField(
@@ -433,6 +576,7 @@ class _Page_1_1 extends State<Page_1_1> {
             onPressed: () async {},
           )
         ],
+        ),
       ),
     );
   }

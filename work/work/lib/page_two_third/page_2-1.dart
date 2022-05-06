@@ -48,7 +48,8 @@ class _Page_2_1 extends State<Page_2_1> {
         title: Text("Page 2-1"),
         backgroundColor: Colors.green,
       ),
-      body: Column(
+        body: SingleChildScrollView(
+        child: ListBody(
         children: [
           Expanded(
             child: Row(
@@ -441,6 +442,7 @@ class _Page_2_1 extends State<Page_2_1> {
           )
         ],
       ),
+    ),
     );
   }
 }

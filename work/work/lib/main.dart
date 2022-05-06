@@ -4,9 +4,8 @@ import 'page_one.dart';
 import 'page_two.dart';
 import 'page_three.dart';
 import 'page_four.dart';
-import 'page_five.dart';
 import 'flutter_tts.dart';
-var color=[Colors.blue,Colors.green,Colors.amber,Colors.purple];
+var color=[Colors.cyan,Colors.green,Colors.amber,Colors.purple];
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
@@ -44,7 +43,7 @@ class MyHomePage extends StatefulWidget {
 class _IndexState extends State<MyHomePage> {
   final List<BottomNavigationBarItem> bottomNavItems = [
     BottomNavigationBarItem(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.black,
       icon: Icon(Icons.insert_emoticon),
       title: Text("心情"),
     ),
@@ -243,8 +242,8 @@ class Warning extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 50.0,
-      width: 50.0,
+      height: 35.0,
+      width: 35.0,
       child: FittedBox(
         child: FloatingActionButton(
           backgroundColor: Colors.red,

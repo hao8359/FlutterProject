@@ -21,9 +21,9 @@ class _PageFour extends State<PageFour> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return SingleChildScrollView(
       padding: const EdgeInsets.all(50.0),
-      child: Column(
+        child: ListBody(
         children: [
           Center(
             child: Container(
