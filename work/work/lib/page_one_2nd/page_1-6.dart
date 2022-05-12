@@ -15,7 +15,7 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n高興', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n靠北', '\r\n好爽'];
+var list = ['\r\n飲食', '\r\n作息', '\r\n生活小知識', '\r\n心理平衡', '\r\n運動', '\r\n壞習慣', '\r\n目標', '\r\n保養'];
 var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
 var setting = [
   Page_1_6_1_Setting(),

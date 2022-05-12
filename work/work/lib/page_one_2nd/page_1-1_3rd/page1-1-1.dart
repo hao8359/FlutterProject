@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../page_four.dart';
 import 'dart:io';
@@ -9,7 +10,7 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n瑟七', '\r\n愛上'];
 var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
-
+var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
 
 class Page_1_1_1 extends StatefulWidget {
   const Page_1_1_1({Key? key}) : super(key: key);
@@ -62,10 +63,11 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset(picture[0], height: 70,width: 70,),
                       label: Text(
                         list[0],
                         //textAlign: TextAlign.center,
@@ -90,10 +92,11 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset(picture[1], height: 70,width: 70,),
                       label: Text(
                         list[1],
                         textAlign: TextAlign.center,
@@ -156,10 +159,11 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset(picture[2], height: 70,width: 70,),
                       label: Text(
                         list[2],
                         textAlign: TextAlign.center,
@@ -216,10 +220,11 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset(picture[3], height: 70,width: 70,),
                       label: Text(
                         list[3],
                         textAlign: TextAlign.center,
@@ -282,10 +287,11 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset(picture[4], height: 70,width: 70,),
                       label: Text(
                         list[4],
                         textAlign: TextAlign.center,
@@ -342,10 +348,11 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset(picture[5], height: 70,width: 70,),
                       label: Text(
                         list[5],
                         textAlign: TextAlign.center,
@@ -408,10 +415,11 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset(picture[6], height: 70,width: 70,),
                       label: Text(
                         list[6],
                         textAlign: TextAlign.center,
@@ -468,10 +476,11 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset(picture[7], height: 70,width: 70,),
                       label: Text(
                         list[7],
                         textAlign: TextAlign.center,

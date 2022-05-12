@@ -15,7 +15,7 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n高興', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n哇哇', '\r\n北七'];
+var list = ['\r\n臥室', '\r\n陽台', '\r\n玄關', '\r\n花園', '\r\n客廳', '\r\n廁所', '\r\n公設', '\r\n廚房'];
 var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
 var setting = [
   Page_1_3_1_Setting(),
@@ -80,10 +80,11 @@ class _Page_1_3 extends State<Page_1_3> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/bedroom.png', height: 70,width: 70,),
                       label: Text(
                         list[0],
                         //textAlign: TextAlign.center,
@@ -108,10 +109,11 @@ class _Page_1_3 extends State<Page_1_3> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/balcony.png', height: 70,width: 70,),
                       label: Text(
                         list[1],
                         textAlign: TextAlign.center,
@@ -176,10 +178,11 @@ class _Page_1_3 extends State<Page_1_3> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/entrance.png', height: 70,width: 70,),
                       label: Text(
                         list[2],
                         textAlign: TextAlign.center,
@@ -238,10 +241,11 @@ class _Page_1_3 extends State<Page_1_3> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/garden.png', height: 70,width: 70,),
                       label: Text(
                         list[3],
                         textAlign: TextAlign.center,
@@ -306,10 +310,11 @@ class _Page_1_3 extends State<Page_1_3> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/livingroom.png', height: 70,width: 70,),
                       label: Text(
                         list[4],
                         textAlign: TextAlign.center,
@@ -368,10 +373,11 @@ class _Page_1_3 extends State<Page_1_3> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/toilet.png', height: 70,width: 70,),
                       label: Text(
                         list[5],
                         textAlign: TextAlign.center,
@@ -436,10 +442,11 @@ class _Page_1_3 extends State<Page_1_3> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/publicfacility.png', height: 70,width: 70,),
                       label: Text(
                         list[6],
                         textAlign: TextAlign.center,
@@ -498,10 +505,11 @@ class _Page_1_3 extends State<Page_1_3> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/kitchen.png', height: 70,width: 70,),
                       label: Text(
                         list[7],
                         textAlign: TextAlign.center,

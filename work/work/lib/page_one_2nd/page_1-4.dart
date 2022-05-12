@@ -15,7 +15,7 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n高興', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n絲給', '\r\n亞斯納'];
+var list = ['\r\n走路', '\r\n腳踏車', '\r\n高鐵', '\r\n捷運', '\r\n公車', '\r\n跑步', '\r\n摩托車', '\r\n計程車'];
 var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
 var setting = [
   Page_1_4_1_Setting(),
@@ -80,10 +80,11 @@ class _Page_1_4 extends State<Page_1_4> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/walk2.png', height: 70,width: 70,),
                       label: Text(
                         list[0],
                         //textAlign: TextAlign.center,
@@ -108,10 +109,11 @@ class _Page_1_4 extends State<Page_1_4> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/bike.png', height: 65,width: 65,),
                       label: Text(
                         list[1],
                         textAlign: TextAlign.center,
@@ -176,10 +178,11 @@ class _Page_1_4 extends State<Page_1_4> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/express.png', height: 70,width: 70,),
                       label: Text(
                         list[2],
                         textAlign: TextAlign.center,
@@ -238,10 +241,11 @@ class _Page_1_4 extends State<Page_1_4> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/metro.png', height: 70,width: 70,),
                       label: Text(
                         list[3],
                         textAlign: TextAlign.center,
@@ -306,10 +310,11 @@ class _Page_1_4 extends State<Page_1_4> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/bus.png', height: 70,width: 70,),
                       label: Text(
                         list[4],
                         textAlign: TextAlign.center,
@@ -368,10 +373,11 @@ class _Page_1_4 extends State<Page_1_4> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/run.png', height: 70,width: 70,),
                       label: Text(
                         list[5],
                         textAlign: TextAlign.center,
@@ -436,10 +442,11 @@ class _Page_1_4 extends State<Page_1_4> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/motorbike.png', height: 70,width: 70,),
                       label: Text(
                         list[6],
                         textAlign: TextAlign.center,
@@ -498,10 +505,11 @@ class _Page_1_4 extends State<Page_1_4> {
                         backgroundColor: Colors.lightBlue,
                         minimumSize: Size(125, 125),
                       ),
-                      icon: Icon(
-                        Icons.insert_emoticon,
-                        size: 50.0,
-                      ),
+                      // icon: Icon(
+                      //   Icons.insert_emoticon,
+                      //   size: 50.0,
+                      // ),
+                      icon: Image.asset('assets/taxi.png', height: 70,width: 70,),
                       label: Text(
                         list[7],
                         textAlign: TextAlign.center,

@@ -5,7 +5,7 @@ import 'page_two.dart';
 import 'page_three.dart';
 import 'page_four.dart';
 import 'flutter_tts.dart';
-var color=[Colors.cyan,Colors.green,Colors.amber,Colors.purple];
+var color=[Colors.cyan,Colors.blueGrey,Colors.amber,Colors.purple];
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
@@ -45,10 +45,10 @@ class _IndexState extends State<MyHomePage> {
     BottomNavigationBarItem(
       backgroundColor: Colors.black,
       icon: Icon(Icons.insert_emoticon),
-      title: Text("心情"),
+      title: Text("常用"),
     ),
     BottomNavigationBarItem(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.cyanAccent,
       icon: Icon(Icons.emoji_food_beverage),
       title: Text("飲食"),
     ),
