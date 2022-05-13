@@ -9,7 +9,7 @@ import 'page_one_2nd/page_1-6.dart';
 import 'page_one_2nd/page_1-7.dart';
 import 'page_one_2nd/page_1-8.dart';
 
-var list = ['\r\n教育', '\r\n衣', '\r\n住', '\r\n行', '\r\n醫療', '\r\n養生','\r\n工作','\r\n育樂'];
+var list = ['\r\n寒暄', '\r\n衣', '\r\n住', '\r\n行', '\r\n醫療', '\r\n養生','\r\n工作','\r\n育樂'];
 var setting = [
   Page_1_1_Setting(),
   Page_1_2_Setting(),
