@@ -61,7 +61,7 @@ class _Page_1_8 extends State<Page_1_8> {
     });
   }
 
-  Widget function(picture1,list1,sentence1,picture2,list2,sentence2){
+  Widget function(picture1,list1,sentence1,next_page1,picture2,list2,sentence2,next_page2){
     return Row(
       children: [
         Expanded(
@@ -87,6 +87,8 @@ class _Page_1_8 extends State<Page_1_8> {
                 ),
               ),
               onPressed: () async {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => next_page1));
                 // 得到 TextField 中輸入的 value
                 String strings = sentence1;
                 // 如果為空則 return
@@ -148,6 +150,8 @@ class _Page_1_8 extends State<Page_1_8> {
                 ),
               ),
               onPressed: () async {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => next_page2));
                 // 得到 TextField 中輸入的 value
                 String strings = sentence2;
                 // 如果為空則 return
@@ -201,16 +205,16 @@ class _Page_1_8 extends State<Page_1_8> {
         child: ListBody(
           children: [
             Expanded(
-              child: function(picture[0], list[0], sentence[0],picture[1], list[1], sentence[1]),
+              child: function(picture[0], list[0], sentence[0],Page_1_8_1(),picture[1], list[1], sentence[1],Page_1_8_2()),
             ),
             Expanded(
-              child: function(picture[2], list[2], sentence[2],picture[3], list[3], sentence[3]),
+              child: function(picture[2], list[2], sentence[2],Page_1_8_3(),picture[3], list[3], sentence[3],Page_1_8_4()),
             ),
             Expanded(
-              child: function(picture[4], list[4], sentence[4],picture[5], list[5], sentence[5]),
+              child: function(picture[4], list[4], sentence[4],Page_1_8_5(),picture[5], list[5], sentence[5],Page_1_8_6()),
             ),
             Expanded(
-              child: function(picture[6], list[6], sentence[6],picture[7], list[7], sentence[7]),
+              child: function(picture[6], list[6], sentence[6],Page_1_8_7(),picture[7], list[7], sentence[7],Page_1_8_8()),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
