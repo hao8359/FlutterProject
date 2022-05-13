@@ -43,14 +43,14 @@ class MyHomePage extends StatefulWidget {
 class _IndexState extends State<MyHomePage> {
   final List<BottomNavigationBarItem> bottomNavItems = [
     BottomNavigationBarItem(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromRGBO(88,178,220,0.8),
       icon: Icon(Icons.insert_emoticon),
       title: Text("常用"),
     ),
     BottomNavigationBarItem(
-      backgroundColor: Colors.cyanAccent,
+      backgroundColor: Color.fromRGBO(27,129,62,0.8),
       icon: Icon(Icons.emoji_food_beverage),
-      title: Text("飲食"),
+      title: Text("寒暄"),
     ),
     BottomNavigationBarItem(
       backgroundColor: Colors.amber,

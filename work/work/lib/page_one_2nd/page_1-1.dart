@@ -19,6 +19,9 @@ import 'package:flutter/material.dart';
 
 var list = ['\r\n設計與規劃學', '\r\n社會學', '\r\n醫學', '\r\n管理學', '\r\n電資學', '\r\n文學','\r\n工學', '\r\n其他學'];
 var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣','今天有點寂寞', '今天有點生氣'];
+var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
+  'assets/education.png','assets/education.png','assets/education.png'];
+
 var setting = [
   Page_1_1_1_Setting(),
   Page_1_1_2_Setting(),

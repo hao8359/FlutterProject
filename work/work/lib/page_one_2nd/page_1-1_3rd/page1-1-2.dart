@@ -9,7 +9,8 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n不要', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\nMina', '\r\nosn'];
 var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
+              'assets/education.png','assets/education.png','assets/education.png'];
 
 class Page_1_1_2 extends StatefulWidget {
   const Page_1_1_2({Key? key}) : super(key: key);
@@ -177,32 +178,34 @@ class _Page_1_1_2 extends State<Page_1_1_2> {
       appBar: AppBar(
         title: Text("Page 1-2-second"),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: function(picture[0], list[0], sentence[0],picture[1], list[1], sentence[1]),
-          ),
-          Expanded(
-            child: function(picture[2], list[2], sentence[2],picture[3], list[3], sentence[3]),
-          ),
-          Expanded(
-            child: function(picture[4], list[4], sentence[4],picture[5], list[5], sentence[5]),
-          ),
-          Expanded(
-            child: function(picture[6], list[6], sentence[6],picture[7], list[7], sentence[7]),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: TextField(
-              controller: myController,
-              decoration: InputDecoration(hintText: "輸入你想說的句子"),
+      body: SingleChildScrollView(
+        child: ListBody(
+          children: [
+            Expanded(
+              child: function(picture[0], list[0], sentence[0],picture[1], list[1], sentence[1]),
             ),
-          ),
-          RaisedButton(
-            child: Text('送出'),
-            onPressed: () async {},
-          )
-        ],
+            Expanded(
+              child: function(picture[2], list[2], sentence[2],picture[3], list[3], sentence[3]),
+            ),
+            Expanded(
+              child: function(picture[4], list[4], sentence[4],picture[5], list[5], sentence[5]),
+            ),
+            Expanded(
+              child: function(picture[6], list[6], sentence[6],picture[7], list[7], sentence[7]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: TextField(
+                controller: myController,
+                decoration: InputDecoration(hintText: "輸入你想說的句子"),
+              ),
+            ),
+            RaisedButton(
+              child: Text('送出'),
+              onPressed: () async {},
+            )
+          ],
+        ),
       ),
     );
   }

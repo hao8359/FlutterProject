@@ -6,15 +6,19 @@ import 'page_three_third/page_3-3.dart';
 import 'page_three_third/page_3-4.dart';
 import 'page_three_third/page_3-5.dart';
 import 'page_three_third/page_3-6.dart';
+import 'page_three_third/page_3-7.dart';
+import 'page_three_third/page_3-8.dart';
 
-var list = ['\r\n醫院', '\r\n海邊', '\r\n山上', '\r\n便利商店', '\r\n超市', '\r\n菜市場','\r\n交通','\r\n百貨公司','\r\n機場','\r\n家'];
+var list = ['\r\n醫院', '\r\n海邊', '\r\n山上', '\r\n便利商店', '\r\n超市', '\r\n菜市場','\r\n交通','\r\n百貨公司'];
 var setting = [
   Page_3_1_Setting(),
   Page_3_2_Setting(),
   Page_3_3_Setting(),
   Page_3_4_Setting(),
   Page_3_5_Setting(),
-  Page_3_6_Setting()
+  Page_3_6_Setting(),
+  Page_3_7_Setting(),
+  Page_3_8_Setting()
 ];
 var box_color=Colors.orange;
 class PageThree extends StatefulWidget {
@@ -259,7 +263,7 @@ class _PageThree extends State<PageThree> {
                     ),
                     onPressed: () {
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Page_3_5()));
+                          MaterialPageRoute(builder: (context) => Page_3_7()));
                     },
                   ),
                 ),
@@ -288,7 +292,7 @@ class _PageThree extends State<PageThree> {
                     ),
                     onPressed: () {
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Page_3_6()));
+                          MaterialPageRoute(builder: (context) => Page_3_8()));
                     },
                   ),
                 ),
@@ -296,70 +300,70 @@ class _PageThree extends State<PageThree> {
             ],
           ),
         ),
-        Expanded(
-          child: Row(
-            children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: TextButton.icon(
-                    style: TextButton.styleFrom(
-                      primary: Colors.black,
-                      backgroundColor: box_color,
-                      minimumSize: Size(125, 125),
-                    ),
-                    // icon: Icon(
-                    //   Icons.insert_emoticon,
-                    //   size: 50.0,
-                    // ),
-                    icon: Image.asset('assets/airplane.png', height: 80,width: 80,),
-                    label: Text(
-                      list[8],
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24.0,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Page_3_5()));
-                    },
-                  ),
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: TextButton.icon(
-                    style: TextButton.styleFrom(
-                      primary: Colors.black,
-                      backgroundColor: box_color,
-                      minimumSize: Size(125, 125),
-                    ),
-                    // icon: Icon(
-                    //   Icons.insert_emoticon,
-                    //   size: 50.0,
-                    // ),
-                    icon: Image.asset('assets/home.png', height: 80,width: 80,),
-                    label: Text(
-                      list[9],
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24.0,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Page_3_6()));
-                    },
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+        // Expanded(
+        //   child: Row(
+        //     children: [
+        //       Expanded(
+        //         child: Padding(
+        //           padding: const EdgeInsets.all(15),
+        //           child: TextButton.icon(
+        //             style: TextButton.styleFrom(
+        //               primary: Colors.black,
+        //               backgroundColor: box_color,
+        //               minimumSize: Size(125, 125),
+        //             ),
+        //             // icon: Icon(
+        //             //   Icons.insert_emoticon,
+        //             //   size: 50.0,
+        //             // ),
+        //             icon: Image.asset('assets/airplane.png', height: 80,width: 80,),
+        //             label: Text(
+        //               list[8],
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontSize: 24.0,
+        //                 fontWeight: FontWeight.w700,
+        //               ),
+        //             ),
+        //             onPressed: () {
+        //               Navigator.of(context).push(
+        //                   MaterialPageRoute(builder: (context) => Page_3_5()));
+        //             },
+        //           ),
+        //         ),
+        //       ),
+        //       Expanded(
+        //         child: Padding(
+        //           padding: const EdgeInsets.all(15),
+        //           child: TextButton.icon(
+        //             style: TextButton.styleFrom(
+        //               primary: Colors.black,
+        //               backgroundColor: box_color,
+        //               minimumSize: Size(125, 125),
+        //             ),
+        //             // icon: Icon(
+        //             //   Icons.insert_emoticon,
+        //             //   size: 50.0,
+        //             // ),
+        //             icon: Image.asset('assets/home.png', height: 80,width: 80,),
+        //             label: Text(
+        //               list[9],
+        //               textAlign: TextAlign.center,
+        //               style: TextStyle(
+        //                 fontSize: 24.0,
+        //                 fontWeight: FontWeight.w700,
+        //               ),
+        //             ),
+        //             onPressed: () {
+        //               Navigator.of(context).push(
+        //                   MaterialPageRoute(builder: (context) => Page_3_6()));
+        //             },
+        //           ),
+        //         ),
+        //       ),
+        //     ],
+        //   ),
+        // ),
       ],
         ),
     );

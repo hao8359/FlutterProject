@@ -5,7 +5,6 @@ import 'sound_player.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
 import 'socket_tts.dart';
-
 String Language = '中文';
 String sex = 'female';
 
@@ -15,94 +14,70 @@ class PageFour extends StatefulWidget {
   @override
   State<PageFour> createState() => _PageFour();
 }
-
 class _PageFour extends State<PageFour> {
-  double padValue = 0;
+  final myController = TextEditingController();
+  final player = SoundPlayer();
+
+  @override
+  void initState() {
+    super.initState();
+    player.init();
+  }
+
+  @override
+  void dispose() {
+    player.dispose();
+    super.dispose();
+  }
+
+  Future play(String pathToReadAudio) async {
+    await player.play(pathToReadAudio);
+    setState(() {
+      player.init();
+      player.isPlaying;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(50.0),
-        child: ListBody(
-        children: [
-          Center(
-            child: Container(
-              //margin: EdgeInsets.all(50.0),
-              width: 240.0,
-              height: 240.0,
-              decoration: BoxDecoration(
-                color: Colors.purpleAccent,
-                shape: BoxShape.circle,
-              ),
-              child: Center(
-                child: Text(
-                  "個人頭像",
-                  style: new TextStyle(
-                    fontSize: 30.0,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          Text(
-            "個人資料",
-            style: new TextStyle(
-              fontSize: 30.0,
-            ),
-          ),
-          Container(
-            //alignment: Alignment.centerLeft,
-            //margin: const EdgeInsets.all(10.0),
-            //color: Colors.amber[600],
-            width: 500,
-            height: 200.0,
-            child: Padding(
-              padding: const EdgeInsets.all(30.0),
-              child: Column(
-                children: [
-                  Expanded(
-                    child: Text(
-                      "姓名 : 使用者",
-                      style: new TextStyle(
-                        fontSize: 30.0,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Text(
-                      "性別 : 生理男",
-                      style: new TextStyle(
-                        fontSize: 30.0,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Text(
-                      "年齡 : 50",
-                      style: new TextStyle(
-                        fontSize: 30.0,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Expanded(
-            child: Center(
-              child: TextButton(
-                onPressed: () {},
-                child: Text(
-                  "登出",
-                  style: new TextStyle(
-                    fontSize: 30.0,
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        TextField(
+          controller: myController,
+          decoration: InputDecoration(hintText: "輸入你想說的句子"),
+        ),
+        RaisedButton(
+          child: Text('送出'),
+          onPressed: () async {
+            String strings = myController.text;
+            print(strings);
+            if (Language == '中文') {
+              if (sex == 'female') {
+                //List<Map<String, String>> g = await Text2SpeechFlutter().flutterTts.getVoices;
+                //print(g);
+                Text2SpeechFlutter()
+                    .flutterTts
+                    .setVoice({"ssmlGender": "cmn-TW-Standard-A"});
+                print(await Text2SpeechFlutter().flutterTts.getVoices);
+
+                await Text2SpeechFlutter().speak(strings);
+              } else {
+                Text2SpeechFlutter()
+                    .flutterTts
+                    .setVoice({"name": "ta-in-x-taf-network"});
+                await Text2SpeechFlutter().speak(strings);
+              }
+            } else {
+              await Text2Speech().connect(play, strings, sex);
+              // player.init();
+              setState(() {
+                // player.isPlaying;
+              });
+            }
+          },
+        )
+      ],
     );
   }
 }
@@ -136,10 +111,10 @@ class _PageFour_Setting extends State<PageFour_Setting> {
                 ),
                 DropdownButton(
                   style: TextStyle(
-                      //te
+                    //te
                       color: Colors.black, //Font color
                       fontSize: 20 //font size on dropdown button
-                      ),
+                  ),
                   //dropdown background color
                   //underline: Container(),
                   //remove underline
@@ -180,10 +155,10 @@ class _PageFour_Setting extends State<PageFour_Setting> {
                 ),
                 DropdownButton(
                   style: TextStyle(
-                      //te
+                    //te
                       color: Colors.black, //Font color
                       fontSize: 20 //font size on dropdown button
-                      ),
+                  ),
                   //dropdown background color
                   //underline: Container(),
                   //remove underline
