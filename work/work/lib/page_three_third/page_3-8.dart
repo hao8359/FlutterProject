@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
-import '../../page_four.dart';
+import '../page_four.dart';
 import 'dart:io';
-import '../../sound_player.dart';
+import '../sound_player.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
-import '../../socket_tts.dart';
-import '../../flutter_tts.dart';
+import '../socket_tts.dart';
+import '../flutter_tts.dart';
 
-var list = ['\r\n不要', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n妮妮', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var list = ['\r\n月牙天沖', '\r\n海邊', '\r\n山上', '\r\n便利商店', '\r\n超市', '\r\n菜市場'];
+var sentence = ['我今天要去醫院', '今天我想去海邊', '今天我想去山上', '我等等要去便利商店', '我等等要去超市', '我等等要去菜市場'];
 var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
   'assets/education.png','assets/education.png','assets/education.png'];
 
-class Page_1_1_6 extends StatefulWidget {
-  const Page_1_1_6({Key? key}) : super(key: key);
+var box_color=Colors.orange;
+class Page_3_8 extends StatefulWidget {
+  const Page_3_8({Key? key}) : super(key: key);
 
   @override
-  State<Page_1_1_6> createState() => _Page_1_1_6();
+  State<Page_3_8> createState() => _Page_3_8();
 }
 
-class _Page_1_1_6 extends State<Page_1_1_6> {
+class _Page_3_8 extends State<Page_3_8> {
   final player = SoundPlayer();
   final myController = TextEditingController();
 
@@ -190,9 +191,6 @@ class _Page_1_1_6 extends State<Page_1_1_6> {
             Expanded(
               child: function(picture[4], list[4], sentence[4],picture[5], list[5], sentence[5]),
             ),
-            Expanded(
-              child: function(picture[6], list[6], sentence[6],picture[7], list[7], sentence[7]),
-            ),
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: TextField(
@@ -211,7 +209,7 @@ class _Page_1_1_6 extends State<Page_1_1_6> {
   }
 }
 
-class Page_1_1_6_Setting extends StatelessWidget {
+class Page_3_8_Setting extends StatelessWidget {
   final myController = [
     TextEditingController(),
     TextEditingController(),

@@ -19,6 +19,7 @@ var list = ['\r\n飲食', '\r\n作息', '\r\n生活小知識', '\r\n心理平衡
 var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
 var picture = ['assets/rosetea.png','assets/rest.png','assets/knowledge.png','assets/counseling.png','assets/sport.png',
   'assets/badhabits.png','assets/goal.png','assets/makeup.png'];
+
 var setting = [
   Page_1_6_1_Setting(),
   Page_1_6_2_Setting(),

@@ -50,7 +50,7 @@ class _IndexState extends State<MyHomePage> {
     BottomNavigationBarItem(
       backgroundColor: Color.fromRGBO(27,129,62,0.8),
       icon: Icon(Icons.emoji_food_beverage),
-      title: Text("飲食"),
+      title: Text("寒暄"),
     ),
     BottomNavigationBarItem(
       backgroundColor: Colors.amber,
