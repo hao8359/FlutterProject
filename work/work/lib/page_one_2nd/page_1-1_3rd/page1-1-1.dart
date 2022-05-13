@@ -47,9 +47,10 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 1-1-second"),
+        title: Text("設計與規劃學"),
       ),
-      body: Column(
+      body: SingleChildScrollView(
+      child: ListBody(
         children: [
           Expanded(
             child: Row(
@@ -543,6 +544,7 @@ class _Page_1_1_1 extends State<Page_1_1_1> {
             onPressed: () async {},
           )
         ],
+      ),
       ),
     );
   }

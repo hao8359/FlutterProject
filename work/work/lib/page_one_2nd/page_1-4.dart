@@ -63,7 +63,7 @@ class _Page_1_4 extends State<Page_1_4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 1-4"),
+        title: Text("行"),
       ),
       body: SingleChildScrollView(
       child: ListBody(

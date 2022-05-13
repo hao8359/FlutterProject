@@ -61,6 +61,135 @@ class _Page_1_1 extends State<Page_1_1> {
     });
   }
 
+  Widget function(picture1,list1,sentence1,picture2,list2,sentence2){
+    return Row(
+      children: [
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(15),
+            child: TextButton.icon(
+              style: TextButton.styleFrom(
+                primary: Colors.black,
+                backgroundColor: Colors.lightBlue,
+                minimumSize: Size(125, 125),
+              ),
+              // icon: Icon(
+              //   Icons.insert_emoticon,
+              //   size: 50.0,
+              // ),
+              icon: Image.asset(picture1, height: 70,width: 70,),
+              label: Text(
+                list1,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              onPressed: () async {
+                // 得到 TextField 中輸入的 value
+                String strings = sentence1;
+                // 如果為空則 return
+                if (strings.isEmpty) return;
+                // connect to text2speech socket
+                // The default is man voice.
+                // If you want a female's voice, put "female" into the parameter.
+                // parameter: call back function, speech synthesized text, (female)
+                print(sentence1);
+                if (Language == "中文") {
+                  if (sex == 'female') {
+                    //List<Map<String, String>> g = await Text2SpeechFlutter().flutterTts.getVoices;
+                    //print(g);
+                    Text2SpeechFlutter()
+                        .flutterTts
+                        .setVoice({"ssmlGender": "cmn-TW-Standard-A"});
+                    print(await Text2SpeechFlutter()
+                        .flutterTts
+                        .getVoices);
+
+                    await Text2SpeechFlutter().speak(strings);
+                  } else {
+                    Text2SpeechFlutter()
+                        .flutterTts
+                        .setVoice({"name": "ta-in-x-taf-network"});
+                    await Text2SpeechFlutter().speak(strings);
+                  }
+                } else {
+                  await Text2Speech().connect(play, strings, sex);
+                  // player.init();
+                  setState(() {
+                    // player.isPlaying;
+                  });
+                }
+              },
+            ),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(15),
+            child: TextButton.icon(
+              style: TextButton.styleFrom(
+                primary: Colors.black,
+                backgroundColor: Colors.lightBlue,
+                minimumSize: Size(125, 125),
+              ),
+              // icon: Icon(
+              //   Icons.insert_emoticon,
+              //   size: 50.0,
+              // ),
+              icon: Image.asset(picture2, height: 70,width: 70,),
+              label: Text(
+                list2,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              onPressed: () async {
+                // 得到 TextField 中輸入的 value
+                String strings = sentence2;
+                // 如果為空則 return
+                if (strings.isEmpty) return;
+                // connect to text2speech socket
+                // The default is man voice.
+                // If you want a female's voice, put "female" into the parameter.
+                // parameter: call back function, speech synthesized text, (female)
+                print(sentence2);
+                if (Language == "中文") {
+                  if (sex == 'female') {
+                    //List<Map<String, String>> g = await Text2SpeechFlutter().flutterTts.getVoices;
+                    //print(g);
+                    Text2SpeechFlutter()
+                        .flutterTts
+                        .setVoice({"ssmlGender": "cmn-TW-Standard-A"});
+                    print(await Text2SpeechFlutter()
+                        .flutterTts
+                        .getVoices);
+
+                    await Text2SpeechFlutter().speak(strings);
+                  } else {
+                    Text2SpeechFlutter()
+                        .flutterTts
+                        .setVoice({"name": "ta-in-x-taf-network"});
+                    await Text2SpeechFlutter().speak(strings);
+                  }
+                } else {
+                  await Text2Speech().connect(play, strings, sex);
+                  // player.init();
+                  setState(() {
+                    // player.isPlaying;
+                  });
+                }
+              },
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
