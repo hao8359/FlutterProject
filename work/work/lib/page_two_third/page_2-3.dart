@@ -7,10 +7,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n煎餃', '\r\n炒青菜', '\r\n紅燒豆腐', '\r\n肉燥飯', '\r\n擔仔麵', '\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯'];
-var sentence = ['我今天想吃煎餃歐', '我今天想吃炒青菜', '我今天想吃紅燒豆腐', '我今天想吃肉燥飯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n吃啥', '\r\n吃飽沒', '\r\n餓嗎', '\r\n渴嗎', '\r\n喝茶', '\r\n飲料','\r\n要不要','\r\n燙口','\r\n好吃','\r\n不好吃'];
+var sentence = ['要吃什麼', '吃飽了嗎', '會不會肚子餓', '要不要喝水', '要喝茶嗎', '要喝飲料嗎', '要不要吃', '小心燙喔', '這真好吃', '這不好吃'];
+var picture = ['assets/askeat-transformed.png','assets/full-transformed.png','assets/hungry-transformed.png','assets/water-transformed.png','assets/tea-transformed.png',
+  'assets/drink-transformed.png','assets/question-transformed.png','assets/hot-transformed.png','assets/tasty-transformed.png','assets/badfood-transformed.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;
 class Page_2_3 extends StatefulWidget {
   const Page_2_3({Key? key}) : super(key: key);
@@ -176,7 +176,7 @@ class _Page_2_3 extends State<Page_2_3> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 1-2-second"),
+        title: Text("食"),
       ),
       body: SingleChildScrollView(
         child: ListBody(

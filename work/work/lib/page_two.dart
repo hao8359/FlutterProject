@@ -11,7 +11,7 @@ import 'page_two_third/page_2-8.dart';
 import 'page_two_third/page_2-9.dart';
 import 'page_two_third/page_2-10.dart';
 
-var list = ['\r\n中式', '\r\n日式', '\r\n歐式', '\r\n甜的', '\r\n手搖飲', '\r\n不餓','\r\n你好','\r\n媽媽很棒'];
+var list = ['\r\n稱謂', '\r\n雜項', '\r\n食', '\r\n衣', '\r\n住', '\r\n行','\r\n育','\r\n樂'];
 var setting = [
   Page_2_1_Setting(),
   Page_2_2_Setting(),
@@ -64,7 +64,7 @@ class _PageTwo extends State<PageTwo> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/chinese.png', height: 50,width: 50,),
+                    icon: Image.asset('assets/dad-transformed.png', height: 50,width: 50,),
                     label: Text(
                       list[0],
                       //textAlign: TextAlign.center,
@@ -93,7 +93,7 @@ class _PageTwo extends State<PageTwo> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/japanese.png', height: 50,width: 50,),
+                    icon: Image.asset('assets/askeat-transformed.png', height: 50,width: 50,),
                     label: Text(
                       list[1],
                       textAlign: TextAlign.center,
@@ -128,7 +128,7 @@ class _PageTwo extends State<PageTwo> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/europe.png', height: 50,width: 50,),
+                    icon: Image.asset('assets/eat-transformed.png', height: 50,width: 50,),
                     label: Text(
                       list[2],
                       textAlign: TextAlign.center,
@@ -157,7 +157,7 @@ class _PageTwo extends State<PageTwo> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/sweets.png', height: 50,width: 50,),
+                    icon: Image.asset('assets/clothe.png', height: 50,width: 50,),
                     label: Text(
                       list[3],
                       textAlign: TextAlign.center,
@@ -192,7 +192,7 @@ class _PageTwo extends State<PageTwo> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/drink.png', height: 50,width: 50,),
+                    icon: Image.asset('assets/home-transformed.png', height: 50,width: 50,),
                     label: Text(
                       list[4],
                       textAlign: TextAlign.center,
@@ -221,7 +221,7 @@ class _PageTwo extends State<PageTwo> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/full.png', height: 50,width: 50,),
+                    icon: Image.asset('assets/walk-transformed.png', height: 50,width: 50,),
                     label: Text(
                       list[5],
                       textAlign: TextAlign.center,
@@ -256,7 +256,7 @@ class _PageTwo extends State<PageTwo> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/india.png', height: 50,width: 50,),
+                    icon: Image.asset('assets/bike-transformed.png', height: 50,width: 50,),
                     label: Text(
                       list[6],
                       textAlign: TextAlign.center,
@@ -285,7 +285,7 @@ class _PageTwo extends State<PageTwo> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
-                    icon: Image.asset('assets/england.png', height: 50,width: 50,),
+                    icon: Image.asset('assets/climb-transformed.png', height: 50,width: 50,),
                     label: Text(
                       list[7],
                       textAlign: TextAlign.center,

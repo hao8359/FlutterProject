@@ -7,10 +7,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n煎餃', '\r\n炒青菜', '\r\n紅燒豆腐', '\r\n肉燥飯', '\r\n擔仔麵', '\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯'];
-var sentence = ['我今天想吃煎餃歐', '我今天想吃炒青菜', '我今天想吃紅燒豆腐', '我今天想吃肉燥飯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-                'assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n爸爸', '\r\n媽媽', '\r\n哥哥', '\r\n姊姊', '\r\n弟弟', '\r\n妹妹','\r\n阿嬤','\r\n阿公','\r\n牛肉湯','\r\n牛肉湯'];
+var sentence = ['爸爸', '媽媽', '哥哥', '姊姊', '弟弟', '妹妹', '阿公', '阿嬤', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
+var picture = ['assets/dad-transformed.png','assets/mom-transformed.png','assets/bro-transformed.png','assets/sis-transformed.png','assets/ybro-transformed.png',
+                'assets/ysis-transformed.png','assets/mama-transformed.png','assets/papa-transformed.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;
 class Page_2_1 extends StatefulWidget {
   const Page_2_1({Key? key}) : super(key: key);
@@ -176,7 +176,7 @@ class _Page_2_1 extends State<Page_2_1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 1-2-second"),
+        title: Text("稱謂"),
       ),
       body: SingleChildScrollView(
     child: ListBody(

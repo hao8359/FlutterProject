@@ -7,10 +7,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n煎餃', '\r\n炒青菜', '\r\n紅燒豆腐', '\r\n肉燥飯', '\r\n擔仔麵', '\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯'];
-var sentence = ['我今天想吃煎餃歐', '我今天想吃炒青菜', '我今天想吃紅燒豆腐', '我今天想吃肉燥飯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n去哪', '\r\n怎麼去', '\r\n我載你', '\r\n開車', '\r\n摩托車', '\r\n公車','\r\n計程車','\r\n火車','\r\n牛肉湯','\r\n牛肉湯'];
+var sentence = ['你要去哪裡', '你要怎麼去', '我載你去', '我開車', '我騎摩托車', '我搭公車', '我搭計程車', '我搭火車', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
+var picture = ['assets/where-transformed.png','assets/question-transformed.png','assets/car-transformed.png','assets/car-transformed.png','assets/scooter-transformed.png',
+  'assets/bus-transformed.png','assets/taxi-transformed.png','assets/train-transformed.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;
 class Page_2_6 extends StatefulWidget {
   const Page_2_6({Key? key}) : super(key: key);
@@ -176,7 +176,7 @@ class _Page_2_6 extends State<Page_2_6> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 1-2-second"),
+        title: Text("行"),
       ),
       body: SingleChildScrollView(
         child: ListBody(
