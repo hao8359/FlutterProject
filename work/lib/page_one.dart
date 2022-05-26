@@ -9,7 +9,11 @@ import 'page_one_2nd/page_1-6.dart';
 import 'page_one_2nd/page_1-7.dart';
 import 'page_one_2nd/page_1-8.dart';
 
+<<<<<<< HEAD:work/lib/page_one.dart
 var list = ['\r\n飲食', '\r\n衣', '\r\n住', '\r\n行', '\r\n醫療', '\r\n養生','\r\n工作','\r\n育樂'];
+=======
+var list = ['\r\n寒暄', '\r\n衣', '\r\n住', '\r\n行', '\r\n醫療', '\r\n養生','\r\n工作','\r\n育樂'];
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_one.dart
 var setting = [
   Page_1_1_Setting(),
   Page_1_2_Setting(),

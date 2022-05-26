@@ -9,7 +9,11 @@ import '../flutter_tts.dart';
 
 var list = ['\r\n去哪', '\r\n回家', '\r\n你住哪', '\r\n好熱', '\r\n繳稅', '\r\n天氣好','\r\n壞了','\r\n電視','\r\n廁所','\r\n牛肉湯'];
 var sentence = ['你要去哪裡', '我要回家', '你住哪裡', '好熱喔，我想開冷氣', '今年的稅繳了嗎', '今天的天氣真好', '這個壞掉了', '你要看電視嗎', '廁所在那邊', '我今天想吃牛肉湯'];
+<<<<<<< HEAD:work/lib/page_two_third/page_2-5.dart
 var picture = ['assets/where-transformed.png','assets/home-transformed.png','assets/home2-transformed.png','assets/hotoutside-transformed.png','assets/tax-transformed.png',
+=======
+var picture = ['assets/where-transformed.png','assets/home-transformed.png','assets/home1-transformed.png','assets/hotoutside-transformed.png','assets/tax-transformed.png',
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two_third/page_2-5.dart
   'assets/weather-transformed.png','assets/broken-transformed.png','assets/tv-transformed.png','assets/tolet-transformed.png','assets/education.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;
 class Page_2_5 extends StatefulWidget {

@@ -9,7 +9,11 @@ import 'page_three_third/page_3-6.dart';
 import 'page_three_third/page_3-7.dart';
 import 'page_three_third/page_3-8.dart';
 
+<<<<<<< HEAD:work/lib/page_three.dart
 var list = ['\r\n醫院', '\r\n海邊', '\r\n山上', '\r\n便利商店', '\r\n超市', '\r\n菜市場','\r\n觀光','\r\n百貨公司'];
+=======
+var list = ['\r\n稱謂', '\r\n雜項', '\r\n食', '\r\n衣', '\r\n住', '\r\n行','\r\n育','\r\n樂'];
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
 var setting = [
   Page_3_1_Setting(),
   Page_3_2_Setting(),
@@ -60,7 +64,11 @@ class _PageThree extends State<PageThree> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
+<<<<<<< HEAD:work/lib/page_three.dart
                     icon: Image.asset('assets/hostpital.png', height: 50,width: 50,),
+=======
+                    icon: Image.asset('assets/dad-transformed.png', height: 50,width: 50,),
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
                     label: Text(
                       list[0],
                       //textAlign: TextAlign.center,
@@ -89,7 +97,11 @@ class _PageThree extends State<PageThree> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
+<<<<<<< HEAD:work/lib/page_three.dart
                     icon: Image.asset('assets/summer-holidays.png', height: 50,width: 50,),
+=======
+                    icon: Image.asset('assets/askeat-transformed.png', height: 50,width: 50,),
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
                     label: Text(
                       list[1],
                       textAlign: TextAlign.center,
@@ -124,7 +136,11 @@ class _PageThree extends State<PageThree> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
+<<<<<<< HEAD:work/lib/page_three.dart
                     icon: Image.asset('assets/mountains.png', height: 50,width: 50,),
+=======
+                    icon: Image.asset('assets/eat-transformed.png', height: 50,width: 50,),
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
                     label: Text(
                       list[2],
                       textAlign: TextAlign.center,
@@ -153,7 +169,11 @@ class _PageThree extends State<PageThree> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
+<<<<<<< HEAD:work/lib/page_three.dart
                     icon: Image.asset('assets/shop.png', height: 50,width: 50,),
+=======
+                    icon: Image.asset('assets/clothe.png', height: 50,width: 50,),
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
                     label: Text(
                       list[3],
                       textAlign: TextAlign.center,
@@ -188,7 +208,11 @@ class _PageThree extends State<PageThree> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
+<<<<<<< HEAD:work/lib/page_three.dart
                     icon: Image.asset('assets/cart.png', height: 50,width: 50,),
+=======
+                    icon: Image.asset('assets/home-transformed.png', height: 50,width: 50,),
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
                     label: Text(
                       list[4],
                       textAlign: TextAlign.center,
@@ -217,7 +241,11 @@ class _PageThree extends State<PageThree> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
+<<<<<<< HEAD:work/lib/page_three.dart
                     icon: Image.asset('assets/market.png', height: 50,width: 50,),
+=======
+                    icon: Image.asset('assets/walk-transformed.png', height: 50,width: 50,),
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
                     label: Text(
                       list[5],
                       textAlign: TextAlign.center,
@@ -252,7 +280,11 @@ class _PageThree extends State<PageThree> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
+<<<<<<< HEAD:work/lib/page_three.dart
                     icon: Image.asset('assets/traffic.png', height: 50,width: 50,),
+=======
+                    icon: Image.asset('assets/bike-transformed.png', height: 50,width: 50,),
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
                     label: Text(
                       list[6],
                       textAlign: TextAlign.center,
@@ -281,7 +313,11 @@ class _PageThree extends State<PageThree> {
                     //   Icons.insert_emoticon,
                     //   size: 50.0,
                     // ),
+<<<<<<< HEAD:work/lib/page_three.dart
                     icon: Image.asset('assets/sogo.png', height: 50,width: 50,),
+=======
+                    icon: Image.asset('assets/climb-transformed.png', height: 50,width: 50,),
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two.dart
                     label: Text(
                       list[7],
                       textAlign: TextAlign.center,

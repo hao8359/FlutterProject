@@ -125,7 +125,7 @@ class _SettingIndexState extends State<SettingPage> {
     BottomNavigationBarItem(
       backgroundColor: Colors.blue,
       icon: Icon(Icons.insert_emoticon),
-      title: Text("心情"),
+      title: Text("常用"),
     ),
     BottomNavigationBarItem(
       backgroundColor: Colors.green,

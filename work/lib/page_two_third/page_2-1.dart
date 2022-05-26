@@ -10,7 +10,11 @@ import '../flutter_tts.dart';
 var list = ['\r\n爸爸', '\r\n媽媽', '\r\n哥哥', '\r\n姊姊', '\r\n弟弟', '\r\n妹妹','\r\n阿嬤','\r\n阿公','\r\n牛肉湯','\r\n牛肉湯'];
 var sentence = ['爸爸', '媽媽', '哥哥', '姊姊', '弟弟', '妹妹', '阿公', '阿嬤', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
 var picture = ['assets/dad-transformed.png','assets/mom-transformed.png','assets/bro-transformed.png','assets/sis-transformed.png','assets/ybro-transformed.png',
+<<<<<<< HEAD:work/lib/page_two_third/page_2-1.dart
   'assets/ysis-transformed.png','assets/mama-transformed.png','assets/papa-transformed.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+=======
+                'assets/ysis-transformed.png','assets/mama-transformed.png','assets/papa-transformed.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+>>>>>>> 45c64bc38b4442280f33ce5151fa5f4e1e8c930b:work/work/lib/page_two_third/page_2-1.dart
 var box_color=Colors.lightGreen;
 class Page_2_1 extends StatefulWidget {
   const Page_2_1({Key? key}) : super(key: key);
