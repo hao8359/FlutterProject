@@ -8,7 +8,7 @@ import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
 var list = ['\r\n鼓山', '\r\n陽明', '\r\n龍磐草原', '\r\n玉山', '\r\n合歡', '\r\n阿里'];
-var sentence = ['我今天要去醫院', '今天我想去海邊', '今天我想去山上', '我等等要去便利商店', '我等等要去超市', '我等等要去菜市場'];
+var sentence = ['我要去鼓山', '我要去陽明山', '我要去龍磐草原', '我要去玉山', '我要去合歡', '我要去阿里山'];
 var picture = ['assets/mountain1.png','assets/mountain2.png','assets/mountain3.png','assets/mountain4.png','assets/mountain5.png',
   'assets/mountain6.png','assets/mountain7.png','assets/mountain8.png'];
 
@@ -248,147 +248,149 @@ class Page_3_3_Setting extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Expanded(
-          child: Row(
-            children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: Column(
-                    children: <Widget>[
-                      TextField(
-                        controller: myController[0],
-                        decoration: InputDecoration(hintText: '高興 欄位請輸入...'),
-                      ),
-                      RaisedButton(
-                        child: Text('儲存內容'),
-                        onPressed: () {
-                          sentence[0] = myController[0].text;
-                          print(sentence[0]);
-                        },
-                      )
-                    ],
+    return SingleChildScrollView(
+      child: ListBody(
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: <Widget>[
+                        TextField(
+                          controller: myController[0],
+                          decoration: InputDecoration(hintText: '高興 欄位請輸入...'),
+                        ),
+                        RaisedButton(
+                          child: Text('儲存內容'),
+                          onPressed: () {
+                            sentence[0] = myController[0].text;
+                            print(sentence[0]);
+                          },
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: Column(
-                    children: <Widget>[
-                      TextField(
-                        controller: myController[1],
-                        decoration: InputDecoration(hintText: '難過 欄位請輸入...'),
-                      ),
-                      RaisedButton(
-                        child: Text('儲存內容'),
-                        onPressed: () {
-                          sentence[1] = myController[1].text;
-                          print(sentence[1]);
-                        },
-                      )
-                    ],
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: <Widget>[
+                        TextField(
+                          controller: myController[1],
+                          decoration: InputDecoration(hintText: '難過 欄位請輸入...'),
+                        ),
+                        RaisedButton(
+                          child: Text('儲存內容'),
+                          onPressed: () {
+                            sentence[1] = myController[1].text;
+                            print(sentence[1]);
+                          },
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-        Expanded(
-          child: Row(
-            children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: Column(
-                    children: <Widget>[
-                      TextField(
-                        controller: myController[2],
-                        decoration: InputDecoration(hintText: '沮喪 欄位請輸入...'),
-                      ),
-                      RaisedButton(
-                        child: Text('儲存內容'),
-                        onPressed: () {
-                          sentence[2] = myController[2].text;
-                          print(sentence[2]);
-                        },
-                      )
-                    ],
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: <Widget>[
+                        TextField(
+                          controller: myController[2],
+                          decoration: InputDecoration(hintText: '沮喪 欄位請輸入...'),
+                        ),
+                        RaisedButton(
+                          child: Text('儲存內容'),
+                          onPressed: () {
+                            sentence[2] = myController[2].text;
+                            print(sentence[2]);
+                          },
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: Column(
-                    children: <Widget>[
-                      TextField(
-                        controller: myController[3],
-                        decoration: InputDecoration(hintText: '無聊 欄位請輸入...'),
-                      ),
-                      RaisedButton(
-                        child: Text('儲存內容'),
-                        onPressed: () {
-                          sentence[3] = myController[3].text;
-                          print(sentence[3]);
-                        },
-                      )
-                    ],
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: <Widget>[
+                        TextField(
+                          controller: myController[3],
+                          decoration: InputDecoration(hintText: '無聊 欄位請輸入...'),
+                        ),
+                        RaisedButton(
+                          child: Text('儲存內容'),
+                          onPressed: () {
+                            sentence[3] = myController[3].text;
+                            print(sentence[3]);
+                          },
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-        Expanded(
-          child: Row(
-            children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: Column(
-                    children: <Widget>[
-                      TextField(
-                        controller: myController[4],
-                        decoration: InputDecoration(hintText: '寂寞 欄位請輸入...'),
-                      ),
-                      RaisedButton(
-                        child: Text('儲存內容'),
-                        onPressed: () {
-                          sentence[4] = myController[4].text;
-                          print(sentence[4]);
-                        },
-                      )
-                    ],
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: <Widget>[
+                        TextField(
+                          controller: myController[4],
+                          decoration: InputDecoration(hintText: '寂寞 欄位請輸入...'),
+                        ),
+                        RaisedButton(
+                          child: Text('儲存內容'),
+                          onPressed: () {
+                            sentence[4] = myController[4].text;
+                            print(sentence[4]);
+                          },
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: Column(
-                    children: <Widget>[
-                      TextField(
-                        controller: myController[5],
-                        decoration: InputDecoration(hintText: '生氣 欄位請輸入...'),
-                      ),
-                      RaisedButton(
-                        child: Text('儲存內容'),
-                        onPressed: () {
-                          sentence[5] = myController[5].text;
-                          print(sentence[5]);
-                        },
-                      )
-                    ],
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: <Widget>[
+                        TextField(
+                          controller: myController[5],
+                          decoration: InputDecoration(hintText: '生氣 欄位請輸入...'),
+                        ),
+                        RaisedButton(
+                          child: Text('儲存內容'),
+                          onPressed: () {
+                            sentence[5] = myController[5].text;
+                            print(sentence[5]);
+                          },
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

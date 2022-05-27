@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n漁夫', '\r\n鴨舌', '\r\n軍帽', '\r\n禮帽', '\r\n爵士', '\r\n八角', '\r\n貝雷', '\r\n登山'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var sentence = ['我今天想戴漁夫帽', '我今天想戴鴨舌帽', '我今天想戴軍帽', '我今天想戴禮帽', '我今天想戴爵士帽', '我今天想戴八角帽', '我今天想戴貝雷帽', '我今天想戴登山帽'];
 var picture = ['assets/cap1.png','assets/cap2.png','assets/cap3.png','assets/cap4.png','assets/cap5.png',
   'assets/cap6.png','assets/cap7.png','assets/cap8.png'];
 

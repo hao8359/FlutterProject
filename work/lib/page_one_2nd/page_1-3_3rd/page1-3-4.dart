@@ -7,8 +7,8 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n寵物', '\r\n步道', '\r\n烤架', '\r\n裝置藝術', '\r\n供水', '\r\n植物', '\r\n天棚', '\r\n柵欄'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var list = ['\r\n寵物', '\r\n步道', '\r\n烤架', '\r\n裝置藝術', '\r\n撒水', '\r\n植物', '\r\n天棚', '\r\n柵欄'];
+var sentence = ['花園溜寵物很愜意', '花園可以架步道', '花園放烤架就可以烤肉囉','花園可以放裝置藝術', '花園可以放烤架撒水器', '在花園養植物很適合', '可以考慮裝天棚',  '架柵欄可以防止野生動物踏進'];
 var picture = ['assets/dog.png','assets/road.png','assets/firebbq.png','assets/art.png','assets/watersupply.png',
   'assets/flower.png','assets/skycover.png','assets/fence.png'];
 

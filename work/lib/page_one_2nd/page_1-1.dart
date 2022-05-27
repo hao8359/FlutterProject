@@ -16,6 +16,9 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 import 'package:flutter/material.dart';
+String Language = '中文';
+String sex = 'female';
+
 
 var list = ['\r\n中式', '\r\n日式', '\r\n歐式', '\r\n甜的', '\r\n手搖飲', '\r\n不餓','\r\n印度式','\r\n英式'];
 var sentence = ['', '', '', '', '', '','', ''];

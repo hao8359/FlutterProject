@@ -402,7 +402,7 @@ class _PageTwo_Setting extends State<PageTwo_Setting> {
           return _buildItem(_pageIndex, index);
         },
         controller: _pageController,
-        itemCount: 6,
+        itemCount: 8,
       ),
       // Indicator
       Positioned(
@@ -413,7 +413,7 @@ class _PageTwo_Setting extends State<PageTwo_Setting> {
           padding: const EdgeInsets.only(bottom: 30),
           child: DotsIndicator(
               color: Colors.green,
-              itemCount: 6,
+              itemCount: 8,
               controller: _pageController,
               onPageSelected: (int page) {
                 _pageController.animateToPage(

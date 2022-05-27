@@ -8,7 +8,8 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n博愛座位', '\r\n月台', '\r\n車票', '\r\n飲食', '\r\n電梯', '\r\n抽菸', '\r\n口罩', '\r\n講話'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var sentence = ['博愛座位可以禮讓給需要的人', '月台要排隊才是好表現', '記得車票要戴好', '在捷運站內禁止飲食', '如有需要可以搭電梯',
+  '在捷運站內禁止抽菸', '疫情期間要戴好口罩保護自身', '講話請輕生細語'];
 var picture = ['assets/seat.jpg','assets/platform.png','assets/ticket2.png','assets/food.png','assets/elevator.png',
   'assets/smoke.png','assets/mask.png','assets/speak.png'];
 

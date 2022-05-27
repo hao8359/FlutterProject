@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n泳池', '\r\n溫泉', '\r\n球場', '\r\n童樂', '\r\n遊戲', '\r\n復健', '\r\n管理', '\r\n健身'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var sentence = ['我要去游泳池', '我想要去泡溫泉', '我想要去球場打球', '我想要去童樂區', '我想要去遊戲室', '我想去做復健', '我要去社區的管理', '我想去健身房'];
 var picture = ['assets/swimmingpool.png','assets/warmpool.png','assets/court.png','assets/playboi.png','assets/gameroom.png',
   'assets/recover.png','assets/manament.png','assets/gym.png'];
 

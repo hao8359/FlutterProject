@@ -8,7 +8,7 @@ import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
 var list = ['\r\n白沙灣', '\r\n外澳', '\r\n觀汐平台', '\r\n西子灣', '\r\n七星潭', '\r\n金樽'];
-var sentence = ['我今天要去醫院', '今天我想去海邊', '今天我想去山上', '我等等要去便利商店', '我等等要去超市', '我等等要去菜市場'];
+var sentence = ['我要去白沙灣', '我要去外澳', '我要去觀汐平台', '我要去西子灣', '我要去七星潭', '我要去金樽'];
 var picture = ['assets/ocean1.png','assets/ocean2.png','assets/ocean3.png','assets/ocean4.png','assets/ocean5.png',
   'assets/ocean6.png','assets/ocean7.png','assets/ocean8.png'];
 
@@ -247,7 +247,8 @@ class Page_3_2_Setting extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return SingleChildScrollView(
+        child: ListBody(
       children: [
         Expanded(
           child: Row(
@@ -388,6 +389,7 @@ class Page_3_2_Setting extends StatelessWidget {
           ),
         ),
       ],
+        ),
     );
   }
 }

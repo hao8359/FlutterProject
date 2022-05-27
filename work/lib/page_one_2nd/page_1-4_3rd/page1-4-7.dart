@@ -8,7 +8,8 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n安全帽', '\r\n防衛駕駛', '\r\n胎壓', '\r\n煞車', '\r\n車燈', '\r\n汽油', '\r\n證件', '\r\n禮讓'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var sentence = ['要戴好安全帽', '要理性騎車並做好防衛駕駛', '出發前檢查胎壓', '檢查煞車是否正常','出發前車燈是否有問題', '檢查汽油是否不夠', '記得要帶自己的駕照及身分證',
+   '請禮讓路上的行人及直行車'];
 var picture = ['assets/helmet3.png','assets/protect.png','assets/tire.png','assets/break.png','assets/light3.png',
   'assets/gas.png','assets/id.png','assets/polite2.png'];
 

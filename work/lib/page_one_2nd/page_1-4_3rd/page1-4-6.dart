@@ -8,7 +8,8 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n跑前飲食', '\r\n鞋子', '\r\n肚子不適', '\r\n頭暈', '\r\n推薦程式', '\r\n喝水', '\r\n暖身', '\r\n服飾'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var sentence = ['運動前可以以水果或是液體等好吸收食品為主', '要穿跑步鞋', '肚子如有不適要馬上停止運動', '頭暈要馬上停止運動', '可以下載跑步程式記錄自己的里程',
+  '跑步途中可以補充少許水分', '跑前要做好暖身', '要穿好方便運動的服飾'];
 var picture = ['assets/food3.png','assets/shoe9.png','assets/hurt.png','assets/headache.png','assets/program.png',
   'assets/drink2.png','assets/warmup2.png','assets/clothe9.png'];
 

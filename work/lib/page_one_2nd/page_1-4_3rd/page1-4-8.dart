@@ -8,7 +8,8 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n檢證', '\r\n卡', '\r\n保持清醒', '\r\n紀錄', '\r\n確認路線', '\r\n注意跳表', '\r\n結伴', '\r\n保持冷靜'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var sentence = ['請檢察司機的證件', '準備付款用的卡', '請勿在車上睡著並保持清醒', '紀錄司機的個人資料及身分證字號', '打開導航確認司機是否有繞路的行為',
+  '注意計價的跳表是否有不自然的加價', '座車請結伴同行', '如被司機騷擾還請保持冷靜並通知警察'];
 var picture = ['assets/taxiid.png','assets/card3.png','assets/awake.png','assets/check.png','assets/map.png',
   'assets/counter2.png','assets/friend.png','assets/calm.png'];
 

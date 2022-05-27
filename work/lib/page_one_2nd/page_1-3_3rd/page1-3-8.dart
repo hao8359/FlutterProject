@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n冰箱', '\r\n烤箱', '\r\n洗碗', '\r\n微波', '\r\n餐具', '\r\n碗盤', '\r\n抽油煙機', '\r\n煮水'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var sentence = ['我要使用冰箱', '我要使用烤箱', '我要去洗碗', '我要使用微波爐', '我要拿餐具', '我要拿碗盤', '我要使用抽油煙機', '我要煮水'];
 var picture = ['assets/refrigrator.png','assets/roast.png','assets/dish.png','assets/microwave.png','assets/fork.png',
   'assets/dish.png','assets/machine.png','assets/boil.png'];
 

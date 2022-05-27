@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n衛生紙', '\r\n刷牙', '\r\n洗臉', '\r\n除溼', '\r\n毛巾', '\r\n浴巾', '\r\n防滑地墊', '\r\n沐浴乳'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var sentence = ['廁所必須有衛生紙', '記得晚上前刷牙', '早上洗臉有助提神', '廁所的除濕很重要', '廁所必須有毛巾', '廁所必須有浴巾', '廁所必須有防滑地墊', '洗澡時必須有沐浴乳'];
 var picture = ['assets/tissue.png','assets/brush.png','assets/washface.png','assets/wetcleaner2.png','assets/littletower.png',
   'assets/tower.png','assets/floorcover.png','assets/shampoo.png'];
 

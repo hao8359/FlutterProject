@@ -8,8 +8,9 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n車票', '\r\n扶手', '\r\n禮讓', '\r\n付款方式', '\r\n行李', '\r\n飲食', '\r\n排隊', '\r\n司機閒談'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣' ,'今天有點寂寞', '今天有點生氣'];
-var picture = ['assets/ticket3.png','assets/elevator3.png','assets/polite.png','assets/payment.png','assets/luggage.png',
+var sentence = ['記得車票要戴好', '公車上要抓穩扶手才安全', '請禮讓座位給有需要的人', '確認清楚公車的付款流程', '要注意行李不要過大影響他人',
+  '公車上禁止飲食' ,'上公車前要先排隊', '請勿跟司機閒談'];
+var picture = ['assets/ticket3.png','assets/hang.png','assets/polite.png','assets/payment.png','assets/luggage.png',
   'assets/eat2.png','assets/wait.png','assets/driver.png'];
 
 class Page_1_4_5 extends StatefulWidget {

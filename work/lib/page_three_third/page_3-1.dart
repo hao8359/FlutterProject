@@ -8,7 +8,7 @@ import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
 var list = ['\r\n台北榮總', '\r\n新竹國泰', '\r\n台中榮總', '\r\n台南成大', '\r\n高雄旗津', '\r\n花蓮慈濟'];
-var sentence = ['我今天要去看泌尿科', '今天我要去看耳鼻喉科', '我現在想去看眼科', '我等等要去看急診', '我等等要去腸胃內科', '我等等要去看脊椎骨科'];
+var sentence = ['我要去台北榮總醫院 ', '我要去新竹國泰醫院', '我要去台北台中榮總醫院 ', '我要去台南成大醫院', '我要去高雄旗津醫院 ', '我要去花蓮慈濟醫院'];
 var picture = ['assets/hospital1.png','assets/hospital2.png','assets/hospital3.png','assets/hospital4.png','assets/hospital5.png',
   'assets/hospital6.png','assets/hospital7.png','assets/hospital8.png'];
 
@@ -247,7 +247,8 @@ class Page_3_1_Setting extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return SingleChildScrollView(
+        child: ListBody(
       children: [
         Expanded(
           child: Row(
@@ -388,6 +389,7 @@ class Page_3_1_Setting extends StatelessWidget {
           ),
         ),
       ],
+        ),
     );
   }
 }

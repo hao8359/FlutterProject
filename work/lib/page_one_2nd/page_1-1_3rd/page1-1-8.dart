@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n炸魚薯條', '\r\n牧羊人派', '\r\n鱔魚凍', '\r\n牛肉腰子派', '\r\n血腸', '\r\n  香腸佐薯泥','\r\n馬麥醬','\r\n蘭開夏羊肉鍋'];
-var sentence = ['我今天想吃煎餃歐', '我今天想吃炒青菜', '我今天想吃紅燒豆腐', '我今天想吃肉燥飯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
+var sentence = ['我今天想吃炸魚薯條', '我今天想牧羊人派', '我今天想吃鱔魚凍', '我今天想吃牛肉腰子派', '我今天想吃血腸', '我今天想吃香腸佐薯泥', '我今天想吃馬麥醬', '我今天想吃蘭開夏羊肉鍋'];
 var picture = ['assets/fishchips.png','assets/pie.png','assets/frozenfish.png','assets/pie2.png','assets/blood.png',
   'assets/sausage.png','assets/marmite.png','assets/pot.png'];
 

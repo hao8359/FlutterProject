@@ -7,8 +7,8 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n大學', '\r\n發熱', '\r\n緊身', '\r\n落肩', '\r\n襯衫', '\r\n帽t', '\r\n撞色', '\r\n休閒襯衫'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var list = ['\r\n大學TEE', '\r\n發熱', '\r\n緊身', '\r\n落肩', '\r\n襯衫', '\r\n帽TEE', '\r\n撞色', '\r\n休閒襯衫'];
+var sentence = ['我想穿大學TEE', '我想穿發熱長袖', '我想穿緊身長袖', '我想穿落肩長袖', '我想穿襯衫長袖', '我想穿帽TEE', '我想穿撞色版長袖', '我想穿休閒襯衫'];
 var picture = ['assets/long1.png','assets/long2.png','assets/long3.png','assets/long4.png','assets/long5.png',
   'assets/long6.png','assets/long7.png','assets/long8.png'];
 

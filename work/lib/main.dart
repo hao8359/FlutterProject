@@ -49,7 +49,7 @@ class _IndexState extends State<MyHomePage> {
     ),
     BottomNavigationBarItem(
       backgroundColor: Color.fromRGBO(27,129,62,0.8),
-      icon: Icon(Icons.emoji_food_beverage),
+      icon: Image.asset('assets/chat2.png', height: 70,width: 70,),
       title: Text("寒暄"),
     ),
     BottomNavigationBarItem(
@@ -59,7 +59,7 @@ class _IndexState extends State<MyHomePage> {
     ),
     BottomNavigationBarItem(
       backgroundColor: Colors.purple,
-      icon: Icon(Icons.keyboard_alt),
+      icon: Icon(Icons.keyboard_alt_outlined),
       title: Text("自行輸入"),
     ),
     // BottomNavigationBarItem(
@@ -125,7 +125,7 @@ class _SettingIndexState extends State<SettingPage> {
     BottomNavigationBarItem(
       backgroundColor: Colors.blue,
       icon: Icon(Icons.insert_emoticon),
-      title: Text("常用"),
+      title: Text("心情"),
     ),
     BottomNavigationBarItem(
       backgroundColor: Colors.green,
