@@ -15,10 +15,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n眼', '\r\n口', '\r\n鼻', '\r\n內傷', '\r\n外傷', '\r\n傳染性疾病', '\r\n慢性病', '\r\n急診'];
+var list = ['\r\n眼', '\r\n鼻子', '\r\n嘴吧', '\r\n耳朵', '\r\n肚子', '\r\n腳', '\r\n手', '\r\n頭'];
 var sentence = ['', '', '', '', '', '','', ''];
-var picture = ['assets/tshirt.png','assets/clothe.png','assets/jacket.png','assets/shoes.png','assets/cap.png',
-  'assets/sox.png','assets/shorts.png','assets/longpants.png'];
+var picture = ['assets/EYE-transformed.png','assets/nose-transformed.png','assets/mouth-transformed.png','assets/ear-transformed.png','assets/belly-transformed.png',
+  'assets/feet-transformed.png','assets/hand-transformed.png','assets/head-transformed.png'];
 
 var setting = [
   Page_1_5_1_Setting(),
@@ -199,7 +199,7 @@ class _Page_1_5 extends State<Page_1_5> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("養生"),
+        title: Text("醫療"),
       ),
       body: SingleChildScrollView(
         child: ListBody(

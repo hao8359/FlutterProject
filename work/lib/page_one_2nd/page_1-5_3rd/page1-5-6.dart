@@ -8,10 +8,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n琪琪', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n痛', '\r\n扭到', '\r\n膝蓋痛', '\r\n腳麻', '\r\n腳冷', '\r\n腳趾痛', '\r\n屁股痛', '\r\n抽筋'];
+var sentence = ['我的腳會痛', '我的腳扭到', '我的膝蓋酸痛', '我的腳麻', '我的腳冰冷', '我的腳趾痛', '我的屁股痛', '我的腳抽筋'];
+var picture = ['assets/feet-transformed.png','assets/footstrain-transformed.png','assets/knee-transformed.png','assets/feetma-transformed.png','assets/feetcold-transformed.png',
+  'assets/toepain-transformed.png','assets/buttpain-transformed.png','assets/feetpain-transformed.png'];
 
 
 class Page_1_5_6 extends StatefulWidget {
@@ -178,7 +178,7 @@ class _Page_1_5_6 extends State<Page_1_5_6> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("傳染性疾病"),
+        title: Text("腳"),
       ),
       body: SingleChildScrollView(
         child: ListBody(

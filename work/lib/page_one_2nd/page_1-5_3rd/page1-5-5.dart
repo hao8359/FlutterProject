@@ -8,10 +8,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n秀秀子', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n痛', '\r\n胃痛', '\r\n拉肚子', '\r\n胃脹氣', '\r\n便祕', '\r\n嘔吐', '\r\n火燒心', '\r\n脹氣'];
+var sentence = ['我肚子痛', '我胃痛', '我拉肚子', '我胃脹氣', '我便秘', '我會嘔吐', '我會火燒心', '我肚子脹氣'];
+var picture = ['assets/belly-transformed.png','assets/stomachache-transformed.png','assets/olidu-transformed.png','assets/ballonstomach-transformed.png','assets/cantshit-transformed.png',
+  'assets/threw-transformed.png','assets/burnheart-transformed.png','assets/bigbelly-transformed.png'];
 
 
 class Page_1_5_5 extends StatefulWidget {
@@ -178,7 +178,7 @@ class _Page_1_5_5 extends State<Page_1_5_5> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("外傷"),
+        title: Text("肚子"),
       ),
       body: SingleChildScrollView(
         child: ListBody(

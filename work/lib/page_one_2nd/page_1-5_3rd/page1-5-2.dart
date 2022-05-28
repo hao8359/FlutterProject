@@ -8,10 +8,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n慈妹', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n痛', '\r\n鼻塞', '\r\n流鼻水', '\r\n流鼻涕', '\r\n聞不到', '\r\n流鼻血', '\r\n衛生紙', '\r\n打噴嚏'];
+var sentence = ['我鼻子痛', '我鼻塞', '我流鼻水', '我流鼻涕', '我聞不到味道', '我流鼻血了', '有沒有衛生紙', '我一直打噴嚏'];
+var picture = ['assets/nose-transformed.png','assets/nosestuck-transformed.png','assets/nosewater-transformed.png','assets/nosewater2-transformed.png','assets/cantsmell-transformed.png',
+  'assets/nosebleed-transformed.png','assets/tissue-transformed.png','assets/hachu-transformed.png'];
 
 
 class Page_1_5_2 extends StatefulWidget {
@@ -178,7 +178,7 @@ class _Page_1_5_2 extends State<Page_1_5_2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("口"),
+        title: Text("鼻子"),
       ),
       body: SingleChildScrollView(
         child: ListBody(

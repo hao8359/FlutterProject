@@ -8,10 +8,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\njamie', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n痛', '\r\n看不到', '\r\n異物', '\r\n癢', '\r\n酸', '\r\n腫', '\r\n近視', '\r\n老花'];
+var sentence = ['我眼睛痛', '我有點看不到', '我眼睛裡卡異物', '我眼睛好養', '我眼睛好酸', '我眼睛好腫', '我有近視', '我有老花'];
+var picture = ['assets/EYE-transformed.png','assets/cantsee-transformed.png','assets/sthstuck-transformed.png','assets/itchy-transformed.png','assets/soreeye-transformed.png',
+  'assets/eyepump-transformed.png','assets/eyeglass-transformed.png','assets/oldeye-transformed.png'];
 
 
 class Page_1_5_1 extends StatefulWidget {

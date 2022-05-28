@@ -8,10 +8,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n君白', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n頭痛', '\r\n頭暈', '\r\n發燒', '\r\n發麻', '\r\n想吐', '\r\n脖子痛', '\r\n落枕', '\r\n休息'];
+var sentence = ['我的頭痛', '我頭暈', '我發燒了', '我頭皮發麻', '我想吐', '我的脖子痛', '我的頭落枕', '我想休息一下'];
+var picture = ['assets/headache-transformed.png','assets/faint-transformed.png','assets/fever-transformed.png','assets/headma-transformed.png','assets/threw-transformed.png',
+  'assets/neckpain-transformed.png','assets/neckpain2-transformed.png','assets/rest-transformed.png'];
 
 
 class Page_1_5_8 extends StatefulWidget {
@@ -178,7 +178,7 @@ class _Page_1_5_8 extends State<Page_1_5_8> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("急診"),
+        title: Text("頭"),
       ),
       body: SingleChildScrollView(
         child: ListBody(

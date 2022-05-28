@@ -8,10 +8,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n檸檬', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n耳朵痛', '\r\n聽不到', '\r\n聽得到', '\r\n異物', '\r\n洗耳朵', '\r\n耳鳴', '\r\n癢', '\r\n分泌物'];
+var sentence = ['我耳朵痛', '我聽不到', '我聽得到', '我耳朵裡有東西', '我想洗耳朵', '我耳鳴了', '我耳朵癢', '我耳朵有分泌物'];
+var picture = ['assets/ear-transformed.png','assets/canthear-transformed.png','assets/canhear-transformed.png','assets/earstuck-transformed.png','assets/washear-transformed.png',
+  'assets/earhong-transformed.png','assets/earitchy-transformed.png','assets/earstuck2-transformed.png'];
 
 
 class Page_1_5_4 extends StatefulWidget {
@@ -178,7 +178,7 @@ class _Page_1_5_4 extends State<Page_1_5_4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("內傷"),
+        title: Text("耳朵"),
       ),
       body: SingleChildScrollView(
         child: ListBody(
