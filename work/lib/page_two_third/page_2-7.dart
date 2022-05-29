@@ -7,10 +7,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n腳踏車', '\r\n一起去', '\r\n散步', '\r\n出門', '\r\n爬山', '\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯'];
-var sentence = ['我要去騎腳踏車', '你要一起去嗎', '要不要出門兜風', '要不要去爬山', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
+var list = ['\r\n腳踏車', '\r\n一起去', '\r\n散步', '\r\n出門', '\r\n爬山', '\r\n公園','\r\n操場','\r\n家附近','\r\n打籃球','\r\n打羽球'];
+var sentence = ['我要去騎腳踏車', '你要一起去嗎', '要不要出門散步', '要不要出門兜風', '要不要去爬山', '要不要去公園走走', '要不要去操場慢跑', '要不要去打籃球', '要不要去打羽球', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
 var picture = ['assets/bike-transformed.png','assets/together-transformed.png','assets/walk-transformed.png','assets/walk1-transformed.png','assets/climb-transformed.png',
-  'assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+  'assets/park.png','assets/playground-transformed.png','assets/home.png','assets/basketball-transformed.png','assets/badminton-transformed.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;
 class Page_2_7 extends StatefulWidget {
   const Page_2_7({Key? key}) : super(key: key);

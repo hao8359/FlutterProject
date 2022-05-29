@@ -7,10 +7,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n兒回來', '\r\n女回來', '\r\n遙控器', '\r\n問候', '\r\n不錯', '\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯'];
-var sentence = ['兒子什麼時候回來', '女兒什麼時候回來', '電視遙控器載哪', '最近過得怎麼樣', '我最近過得不錯啊', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
+var list = ['\r\n兒回來', '\r\n女回來', '\r\n遙控器', '\r\n問候', '\r\n不錯', '\r\n遊樂園','\r\n逛街','\r\n逛市集','\r\n購物','\r\n電影'];
+var sentence = ['兒子什麼時候回來', '女兒什麼時候回來', '電視遙控器載哪', '最近過得怎麼樣', '我最近過得不錯啊', '要不要去遊樂園', '要不要去逛市集', '要不要去購物', '要不要去看電影', '我今天想吃牛肉湯'];
 var picture = ['assets/care-transformed.png','assets/question-transformed.png','assets/controller-transformed.png','assets/care-transformed.png','assets/lookgood-transformed.png',
-  'assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+  'assets/themepark-transformed.png','assets/shopping-transformed.png','assets/shoop-transformed.png','assets/buyy-transformed.png','assets/cinema-transformed.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;
 class Page_2_8 extends StatefulWidget {
   const Page_2_8({Key? key}) : super(key: key);

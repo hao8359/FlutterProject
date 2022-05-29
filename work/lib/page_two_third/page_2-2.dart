@@ -7,10 +7,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n你好', '\r\n謝謝', '\r\n沒問題', '\r\n不舒服', '\r\n關心', '\r\n好啊','\r\n拒絕','\r\n聯絡','\r\n再見','\r\n牛肉湯'];
-var sentence = ['你好', '謝謝', '沒問題', '我有點不舒服', '你還好嗎', '好啊', '不要', '之後用訊息來聯絡', '掰掰', '我今天想吃牛肉湯'];
+var list = ['\r\n你好', '\r\n謝謝', '\r\n沒問題', '\r\n不舒服', '\r\n關心', '\r\n好啊','\r\n拒絕','\r\n聯絡','\r\n再見','\r\n要這個'];
+var sentence = ['你好', '謝謝', '沒問題', '我有點不舒服', '你還好嗎', '好啊', '不要', '之後用訊息來聯絡', '掰掰', '我要這個'];
 var picture = ['assets/hi-transformed.png','assets/thx-transformed.png','assets/OK-transformed.png','assets/sick-transformed.png','assets/care-transformed.png',
-  'assets/OK-transformed.png','assets/no-transformed.png','assets/messege-transformed.png','assets/byebye-transformed.png','assets/education.png','assets/education.png','assets/education.png'];
+  'assets/OK-transformed.png','assets/no-transformed.png','assets/messege-transformed.png','assets/byebye-transformed.png','assets/hand-transformed.png','assets/education.png','assets/finger-transformed.png'];
 var box_color=Colors.lightGreen;
 class Page_2_2 extends StatefulWidget {
   const Page_2_2({Key? key}) : super(key: key);

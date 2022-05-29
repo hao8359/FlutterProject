@@ -7,10 +7,10 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n天氣冷', '\r\n天氣熱', '\r\n好看', '\r\n不好看', '\r\n會熱嗎', '\r\n會冷嗎','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯','\r\n牛肉湯'];
-var sentence = ['天氣冷，要多穿一點', '天氣熱，要注意曬傷', '這樣穿很好看', '會不會熱', '會不會冷', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯', '我今天想吃擔仔麵', '我今天想吃牛肉湯'];
-var picture = ['assets/cold-transformed.png','assets/hot-transformed.png','assets/lookgood-transformed.png','assets/badlook-transformed.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png','assets/education.png'];
+var list = ['\r\n天氣冷', '\r\n天氣熱', '\r\n好看', '\r\n不好看', '\r\n會熱嗎', '\r\n會冷嗎','\r\n穿太多','\r\n穿太少','\r\n哪買的','\r\n買衣服'];
+var sentence = ['天氣冷，要多穿一點', '天氣熱，要注意曬傷', '這樣穿很好看', '會不會熱', '會不會冷', '這樣穿太多了', '這樣穿太少了', '你的衣服在哪買的', '要不要去買衣服', '我今天想吃牛肉湯'];
+var picture = ['assets/cold-transformed.png','assets/hotoutside-transformed.png','assets/lookgood-transformed.png','assets/badlook-transformed.png','assets/hott-transformed.png',
+  'assets/coldd-transformed.png','assets/toomuch-transformed.png','assets/tooless-transformed.png','assets/wheree-transformed.png','assets/shopp-transformed.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;
 class Page_2_4 extends StatefulWidget {
   const Page_2_4({Key? key}) : super(key: key);
