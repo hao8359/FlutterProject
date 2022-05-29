@@ -40,7 +40,7 @@ class Text2Speech {
     g[3] = ((outbyte.length & 0x000000ff));
 
     //連接socket
-    await Socket.connect("140.116.245.146", 31631).then((socket) async {
+    await Socket.connect("140.116.245.146", 10012).then((socket) async {
       print('------Successfully connected------');
       // 向socket傳送資料
       socket.add(byteconcate(g, outbyte));

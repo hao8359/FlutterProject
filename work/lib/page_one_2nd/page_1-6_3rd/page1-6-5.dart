@@ -10,8 +10,8 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n散步', '\r\n一起', '\r\n公園', '\r\n運動', '\r\n久站', '\r\n每周', '\r\n健康', '\r\n腳踏車'];
 var sentence = ['我想出門散步', '你要一起來嗎', '我想去公園', '運動身體好', '坐久了要站起來動一動', '每周要至少運動三天', '運動是強健身體 延年益壽的基本條件', '我要去騎腳踏車'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var picture = ['assets/walk2.png','assets/together-transformed.png','assets/park.png','assets/run.png','assets/stand.png',
+  'assets/exercise.png','assets/health.png','assets/bike2.png'];
 
 class Page_1_6_5 extends StatefulWidget {
   const Page_1_6_5({Key? key}) : super(key: key);

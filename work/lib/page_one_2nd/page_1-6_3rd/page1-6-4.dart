@@ -10,8 +10,8 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n平和', '\r\n深呼吸', '\r\n散步', '\r\n走一走', '\r\n心情', '\r\n還好嗎', '\r\n不生氣', '\r\n心情差'];
 var sentence = ['心平氣和 不要衝動', '深呼吸一下', '出門散步 平緩心情', '心情差的時候就去走一走', '你最近心情怎麼樣', '你最近還好嗎', '不要生氣了', '我最近心情不太好'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var picture = ['assets/calm3.png','assets/deep2.png','assets/walk.png','assets/walk2.png','assets/how.png',
+  'assets/happy.png','assets/angry-face.png','assets/disappointed.png'];
 
 class Page_1_6_4 extends StatefulWidget {
   const Page_1_6_4({Key? key}) : super(key: key);

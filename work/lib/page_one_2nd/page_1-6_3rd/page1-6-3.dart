@@ -10,8 +10,8 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n吃飽', '\r\n睡覺', '\r\n滑手機', '\r\n咖啡', '\r\n熬夜', '\r\n空腹', '\r\n運動', '\r\n宵夜'];
 var sentence = ['剛吃飽飯不要去運動', '睡覺不要睡太久', '睡前不要滑手機，容易失眠', '咖啡喝多了容易失眠', '不要熬夜 對身體不好', '不要空腹喝牛奶 容易拉肚子', '運動前要熱身 才不會受傷', '少吃宵夜 不然會變胖'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var picture = ['assets/full.png','assets/sleep2.png','assets/phone.png','assets/coffee.png','assets/stay.png',
+  'assets/hungry.png','assets/sport.png','assets/hamburger.png'];
 
 class Page_1_6_3 extends StatefulWidget {
   const Page_1_6_3({Key? key}) : super(key: key);
