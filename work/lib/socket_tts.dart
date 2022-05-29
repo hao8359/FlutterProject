@@ -21,7 +21,7 @@ class Text2Speech {
     String model = inputModel;
     // choose man or female model
     if (inputModel == "man") {
-      model = "M12";
+      model = "M90";
     } else if (inputModel == "female") {
       model = "F14_sandhi";
     }

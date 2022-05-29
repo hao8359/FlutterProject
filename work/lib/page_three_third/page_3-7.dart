@@ -53,7 +53,7 @@ class _Page_3_7 extends State<Page_3_7> {
             child: TextButton.icon(
               style: TextButton.styleFrom(
                 primary: Colors.black,
-                backgroundColor: Colors.lightBlue,
+                backgroundColor: Colors.orange,
                 minimumSize: Size(125, 125),
               ),
               // icon: Icon(
@@ -114,7 +114,7 @@ class _Page_3_7 extends State<Page_3_7> {
             child: TextButton.icon(
               style: TextButton.styleFrom(
                 primary: Colors.black,
-                backgroundColor: Colors.lightBlue,
+                backgroundColor: Colors.orange,
                 minimumSize: Size(125, 125),
               ),
               // icon: Icon(
@@ -178,6 +178,7 @@ class _Page_3_7 extends State<Page_3_7> {
     return Scaffold(
       appBar: AppBar(
         title: Text("觀光"),
+        backgroundColor: Colors.amber,
       ),
       body: SingleChildScrollView(
         child: ListBody(

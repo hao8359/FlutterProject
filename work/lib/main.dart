@@ -125,12 +125,12 @@ class _SettingIndexState extends State<SettingPage> {
     BottomNavigationBarItem(
       backgroundColor: Colors.blue,
       icon: Icon(Icons.insert_emoticon),
-      title: Text("心情"),
+      title: Text("常用"),
     ),
     BottomNavigationBarItem(
       backgroundColor: Colors.green,
-      icon: Icon(Icons.emoji_food_beverage),
-      title: Text("飲食"),
+      icon: Image.asset('assets/chat2.png', height: 70,width: 70,),
+      title: Text("寒暄"),
     ),
     BottomNavigationBarItem(
       backgroundColor: Colors.amber,
@@ -139,7 +139,7 @@ class _SettingIndexState extends State<SettingPage> {
     ),
     BottomNavigationBarItem(
       backgroundColor: Colors.purple,
-      icon: Icon(Icons.person),
+      icon: Icon(Icons.keyboard_alt_outlined),
       title: Text("自行輸入"),
     ),
     // BottomNavigationBarItem(
@@ -151,7 +151,8 @@ class _SettingIndexState extends State<SettingPage> {
 
   int currentIndex = 0;
 
-  final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting()];
+  final pages = [PageFour_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting()];
+  //final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting()];
   //final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting(), PageFive_Setting()];
   @override
   void initState() {

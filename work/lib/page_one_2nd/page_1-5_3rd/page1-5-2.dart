@@ -10,8 +10,8 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n痛', '\r\n鼻塞', '\r\n流鼻水', '\r\n流鼻涕', '\r\n聞不到', '\r\n流鼻血', '\r\n衛生紙', '\r\n打噴嚏'];
 var sentence = ['我鼻子痛', '我鼻塞', '我流鼻水', '我流鼻涕', '我聞不到味道', '我流鼻血了', '有沒有衛生紙', '我一直打噴嚏'];
-var picture = ['assets/nose-transformed.png','assets/nosestuck-transformed.png','assets/nosewater-transformed.png','assets/nosewater2-transformed.png','assets/cantsmell-transformed.png',
-  'assets/nosebleed-transformed.png','assets/tissue-transformed.png','assets/hachu-transformed.png'];
+var picture = ['assets/nose-transformed.png','assets/nosestuck-transformed.png','assets/nosewater-transformed.png','assets/nosewater2-transformed.png','assets/cantsmell-tc52aVWKl-transformed.png',
+  'assets/nosebleed-transformed.png','assets/tissue-transformed.png','assets/hachu-kCGfUGW6W-transformed.png'];
 
 
 class Page_1_5_2 extends StatefulWidget {

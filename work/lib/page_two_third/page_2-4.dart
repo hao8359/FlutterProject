@@ -52,7 +52,7 @@ class _Page_2_4 extends State<Page_2_4> {
             child: TextButton.icon(
               style: TextButton.styleFrom(
                 primary: Colors.black,
-                backgroundColor: Colors.lightBlue,
+                backgroundColor: Colors.lightGreen,
                 minimumSize: Size(125, 125),
               ),
               // icon: Icon(
@@ -113,7 +113,7 @@ class _Page_2_4 extends State<Page_2_4> {
             child: TextButton.icon(
               style: TextButton.styleFrom(
                 primary: Colors.black,
-                backgroundColor: Colors.lightBlue,
+                backgroundColor: Colors.lightGreen,
                 minimumSize: Size(125, 125),
               ),
               // icon: Icon(
@@ -177,6 +177,7 @@ class _Page_2_4 extends State<Page_2_4> {
     return Scaffold(
       appBar: AppBar(
         title: Text("衣"),
+        backgroundColor: Colors.blueGrey,
       ),
       body: SingleChildScrollView(
         child: ListBody(

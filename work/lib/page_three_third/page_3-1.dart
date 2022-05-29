@@ -53,7 +53,7 @@ class _Page_3_1 extends State<Page_3_1> {
             child: TextButton.icon(
               style: TextButton.styleFrom(
                 primary: Colors.black,
-                backgroundColor: Colors.lightBlue,
+                backgroundColor: Colors.orange,
                 minimumSize: Size(125, 125),
               ),
               // icon: Icon(
@@ -114,7 +114,7 @@ class _Page_3_1 extends State<Page_3_1> {
             child: TextButton.icon(
               style: TextButton.styleFrom(
                 primary: Colors.black,
-                backgroundColor: Colors.lightBlue,
+                backgroundColor: Colors.orange,
                 minimumSize: Size(125, 125),
               ),
               // icon: Icon(
@@ -178,6 +178,7 @@ class _Page_3_1 extends State<Page_3_1> {
     return Scaffold(
       appBar: AppBar(
         title: Text("醫院"),
+        backgroundColor: Colors.amber,
       ),
       body: SingleChildScrollView(
         child: ListBody(
