@@ -261,7 +261,7 @@ class Page_3_5_Setting extends StatelessWidget {
                       children: <Widget>[
                         TextField(
                           controller: myController[0],
-                          decoration: InputDecoration(hintText: '高興 欄位請輸入...'),
+                          decoration: InputDecoration(hintText: '全聯 欄位請輸入...'),
                         ),
                         RaisedButton(
                           child: Text('儲存內容'),
@@ -281,7 +281,7 @@ class Page_3_5_Setting extends StatelessWidget {
                       children: <Widget>[
                         TextField(
                           controller: myController[1],
-                          decoration: InputDecoration(hintText: '難過 欄位請輸入...'),
+                          decoration: InputDecoration(hintText: '主婦聯盟 欄位請輸入...'),
                         ),
                         RaisedButton(
                           child: Text('儲存內容'),
@@ -307,7 +307,7 @@ class Page_3_5_Setting extends StatelessWidget {
                       children: <Widget>[
                         TextField(
                           controller: myController[2],
-                          decoration: InputDecoration(hintText: '沮喪 欄位請輸入...'),
+                          decoration: InputDecoration(hintText: '家樂福 欄位請輸入...'),
                         ),
                         RaisedButton(
                           child: Text('儲存內容'),
@@ -327,7 +327,7 @@ class Page_3_5_Setting extends StatelessWidget {
                       children: <Widget>[
                         TextField(
                           controller: myController[3],
-                          decoration: InputDecoration(hintText: '無聊 欄位請輸入...'),
+                          decoration: InputDecoration(hintText: '好市多 欄位請輸入...'),
                         ),
                         RaisedButton(
                           child: Text('儲存內容'),
@@ -353,7 +353,7 @@ class Page_3_5_Setting extends StatelessWidget {
                       children: <Widget>[
                         TextField(
                           controller: myController[4],
-                          decoration: InputDecoration(hintText: '寂寞 欄位請輸入...'),
+                          decoration: InputDecoration(hintText: '頂好 欄位請輸入...'),
                         ),
                         RaisedButton(
                           child: Text('儲存內容'),
@@ -373,7 +373,7 @@ class Page_3_5_Setting extends StatelessWidget {
                       children: <Widget>[
                         TextField(
                           controller: myController[5],
-                          decoration: InputDecoration(hintText: '生氣 欄位請輸入...'),
+                          decoration: InputDecoration(hintText: '大潤發 欄位請輸入...'),
                         ),
                         RaisedButton(
                           child: Text('儲存內容'),

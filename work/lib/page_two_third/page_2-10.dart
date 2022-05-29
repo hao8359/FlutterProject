@@ -248,6 +248,10 @@ class Page_2_10_Setting extends StatelessWidget {
     TextEditingController(),
     TextEditingController(),
     TextEditingController(),
+    TextEditingController(),
+    TextEditingController(),
+    TextEditingController(),
+    TextEditingController(),
     TextEditingController()
   ];
 

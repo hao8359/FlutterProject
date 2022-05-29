@@ -402,7 +402,7 @@ class _PageTwo_Setting extends State<PageTwo_Setting> {
           return _buildItem(_pageIndex, index);
         },
         controller: _pageController,
-        itemCount: 8,
+        itemCount: 10,
       ),
       // Indicator
       Positioned(
