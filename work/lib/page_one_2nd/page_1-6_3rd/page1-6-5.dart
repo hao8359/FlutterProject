@@ -8,8 +8,8 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
-var list = ['\r\n嗨嗨', '\r\n難過', '\r\n沮喪', '\r\n無聊', '\r\n寂寞', '\r\n生氣', '\r\n快', '\r\n生氣'];
-var sentence = ['我今天很高興', '今天我有點難過', '今天有點沮喪', '今天有點無聊', '今天有點寂寞', '今天有點生氣', '今天有點寂寞', '今天有點生氣'];
+var list = ['\r\n散步', '\r\n一起', '\r\n公園', '\r\n運動', '\r\n久站', '\r\n每周', '\r\n健康', '\r\n腳踏車'];
+var sentence = ['我想出門散步', '你要一起來嗎', '我想去公園', '運動身體好', '坐久了要站起來動一動', '每周要至少運動三天', '運動是強健身體 延年益壽的基本條件', '我要去騎腳踏車'];
 var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
   'assets/education.png','assets/education.png','assets/education.png'];
 
