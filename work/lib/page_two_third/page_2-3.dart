@@ -8,7 +8,7 @@ import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
 var list = ['\r\n吃啥', '\r\n吃飽沒', '\r\n餓嗎', '\r\n渴嗎', '\r\n喝茶', '\r\n飲料','\r\n要不要','\r\n燙口','\r\n好吃','\r\n不好吃'];
-var sentence = ['要吃什麼', '吃飽了嗎', '會不會肚子餓', '要不要喝水', '要喝茶嗎', '要喝飲料嗎', '要不要吃', '小心燙喔', '這真好吃', '這不好吃'];
+var sentence = ['要吃什麼', '吃飽了嗎', '會不會肚子餓', '要不要喝水', '要喝茶嗎', '要喝飲料嗎', '要不要吃', '小心燙喔', '這好吃', '這不好吃'];
 var picture = ['assets/askeat-transformed.png','assets/full-transformed.png','assets/hungry-transformed.png','assets/water-transformed.png','assets/tea-transformed.png',
   'assets/drink-transformed.png','assets/question-transformed.png','assets/hot-transformed.png','assets/tasty-transformed.png','assets/badfood-transformed.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;

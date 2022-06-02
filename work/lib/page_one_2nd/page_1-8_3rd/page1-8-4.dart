@@ -10,8 +10,8 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n市集', '\r\n快到了', '\r\n買什麼', '\r\n好悠閒', '\r\n這個', '\r\n廁所', '\r\n多少錢', '\r\n該走了'];
 var sentence = ['要不要去逛市集', '不會很遠 一下子就到了', '你有想買什麼嗎', '這裡好悠閒', '我要這個', '我想去上廁所', '這個多少錢', '差不多該走了'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var picture = ['assets/local2.png','assets/coming.png','assets/shopping2.png','assets/chill.png','assets/this.png',
+  'assets/toilet.png','assets/price.png','assets/close.png'];
 
 class Page_1_8_4 extends StatefulWidget {
   const Page_1_8_4({Key? key}) : super(key: key);

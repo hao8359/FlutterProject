@@ -10,7 +10,7 @@ import '../../flutter_tts.dart';
 var list = ['\r\n狗鍊', '\r\n手機', '\r\n袋子', '\r\n水壺', '\r\n晶片', '\r\n時間', '\r\n天氣', '\r\n場地'];
 var sentence = ['溜狗要記得栓狗鍊', '記得戴手機', '隨時準備袋子以防毛小孩想臨時上廁所', '戴水壺讓毛小孩不會口渴',  '記得要給毛小孩裝能定位的晶片', '毛小孩運動要注意時間免得太累','溜狗要注意天氣', '溜狗前要尋找適合的場地'];
 var picture = ['assets/dogchain.png','assets/phone.png','assets/plasticbag.png','assets/waterbottle.png','assets/chip.png',
-  'assets/counter.png','assets/weather.png','assets/park.jpg'];
+  'assets/counter.png','assets/weather.png','assets/park.png'];
 
 class Page_1_4_1 extends StatefulWidget {
   const Page_1_4_1({Key? key}) : super(key: key);

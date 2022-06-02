@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n車票', '\r\n證件', '\r\n時間', '\r\n物品', '\r\n動物', '\r\n單車', '\r\n樂器', '\r\n童車'];
-var sentence = ['記得帶車票', '記得帶身分證件', '記得座車時間', '物品的總重量不得超過 40 公斤和長度不得超過150公分', '原則上不得攜帶動物進入，需經本公司同意才行', '符合隨身攜帶物品標準者，得免費攜帶乘車', '符合攜帶物品尺寸及重量限制煮，得以一般隨身物品之方式攜帶上車', '如有戴嬰幼兒推車請主動告知售票人員'];
+var sentence = ['記得帶車票', '記得帶身分證件', '記得座車時間', '物品的總重量不得超過四十公斤和長度不得超過一百五十公分', '原則上不得攜帶動物進入，需經高鐵公司同意才行', '符合隨身攜帶物品標準者，得免費攜帶乘車', '符合攜帶物品尺寸及重量限制的樂器，得以一般隨身物品之方式攜帶上車', '如有戴嬰幼兒推車請主動告知售票人員'];
 var picture = ['assets/ticket.png','assets/card.png','assets/watch.png','assets/bag.png','assets/dog2.png',
   'assets/bike2.png','assets/instrument.png','assets/babykart.jpg'];
 

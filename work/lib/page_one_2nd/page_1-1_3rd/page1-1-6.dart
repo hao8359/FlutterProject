@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n現在', '\r\n一小時', '\r\n兩小時', '\r\n剛吃', '\r\n休息', '\r\n吃藥不餓','\r\n喝水就好','\r\n零食'];
-var sentence = ['我現在很餓吃飯', '我一小時才會餓', '我二小時才會餓', '我剛剛才吃過飯了', '我今天想休息先不吃', '我有吃藥現在不餓', '我只要喝水就好', '我現在更想吃零食'];
+var sentence = ['我現在很餓想要吃飯', '我一小時後才會餓', '我二小時後才會餓', '我剛剛才吃過飯了', '我今天想休息先不吃', '我有吃藥現在不餓', '我只要喝水就好', '我現在更想吃零食'];
 var picture = ['assets/fullcat.png','assets/fullcat.png','assets/fullcat.png','assets/fullcat.png','assets/fullcat.png',
   'assets/drugs.png','assets/drinkwater.png','assets/junkfood.png'];
 

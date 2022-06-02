@@ -8,7 +8,7 @@ import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
 var list = ['\r\n爸爸', '\r\n媽媽', '\r\n哥哥', '\r\n姊姊', '\r\n弟弟', '\r\n妹妹','\r\n阿嬤','\r\n阿公','\r\n外婆','\r\n外公'];
-var sentence = ['爸爸', '媽媽', '哥哥', '姊姊', '弟弟', '妹妹', '阿嬤', '阿公', '外婆', '外公'];
+var sentence = ['爸爸', '媽媽', '哥哥', '姊姊', '小弟', '妹妹', '阿嬤', '阿公', '外婆', '外公'];
 var picture = ['assets/dad-transformed.png','assets/mom-transformed.png','assets/bro-transformed.png','assets/sis-transformed.png','assets/ybro-transformed.png',
   'assets/ysis-transformed.png','assets/mama-transformed.png','assets/papa-transformed.png','assets/mama-transformed.png','assets/papa-transformed.png','assets/education.png','assets/education.png'];
 var box_color=Colors.lightGreen;

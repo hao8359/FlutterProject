@@ -21,9 +21,11 @@ class Text2Speech {
     String model = inputModel;
     // choose man or female model
     if (inputModel == "man") {
-      model = "M90";
+      model = "M12";
     } else if (inputModel == "female") {
       model = "F14_sandhi";
+    } else if (inputModel == "secondman") {
+      model = "M90";
     }
 
     String outmsg = token + "@@@" + strings + "@@@" + model;

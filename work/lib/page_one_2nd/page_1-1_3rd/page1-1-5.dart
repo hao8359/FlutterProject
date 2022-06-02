@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n珍珠奶茶', '\r\n紅茶拿鐵', '\r\n鐵觀音拿鐵', '\r\n檸檬蜜', '\r\n蜂蜜綠茶', '\r\n金桔茶','\r\n紅寶歐酪','\r\n芝芝葡萄果粒'];
-var sentence = ['我今天想喝珍珠奶茶', '我今天想喝紅茶拿鐵', '我今天想喝鐵觀音拿鐵', '我今天想喝檸檬蜜', '我今天想喝蜂蜜綠茶', '我今天想喝金桔茶', '我今天想喝寶歐酪', '我今天想喝芝芝葡萄果粒'];
+var sentence = ['我今天想喝珍珠奶茶', '我今天想喝紅茶拿鐵', '我今天想喝鐵觀音拿鐵', '我今天想喝檸檬蜜', '我今天想喝蜂蜜綠茶', '我今天想喝金桔茶', '我今天想喝紅寶歐酪', '我今天想喝芝芝葡萄果粒'];
 var picture = ['assets/bubbletea.png','assets/redlatte.png','assets/ironlatte.png','assets/lemonhoney.png','assets/honeygreen.png',
   'assets/honeygreen2.png','assets/redgem.png','assets/grape.png'];
 

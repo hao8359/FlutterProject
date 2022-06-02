@@ -146,7 +146,7 @@ class _PageFour_Setting extends State<PageFour_Setting> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  '性別選擇    ',
+                  '人物選擇    ',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: 24.0,
@@ -178,6 +178,10 @@ class _PageFour_Setting extends State<PageFour_Setting> {
                     DropdownMenuItem(
                       value: 'female',
                       child: Text('女生'),
+                    ),
+                    DropdownMenuItem(
+                      value: 'secondman',
+                      child: Text('楊先生'),
                     ),
                   ],
                 ),

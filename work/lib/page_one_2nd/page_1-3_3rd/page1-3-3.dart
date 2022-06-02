@@ -8,7 +8,7 @@ import '../../socket_tts.dart';
 import '../../flutter_tts.dart';
 
 var list = ['\r\n鞋櫃', '\r\n鏡子', '\r\n掛勾', '\r\n鬧鐘', '\r\n櫃子', '\r\n地墊', '\r\n衣架', '\r\n椅子'];
-var sentence = ['玄關放鏡子不錯', '玄關放鏡子不錯', '玄關放衣服掛勾', '玄關掛鬧鐘很重要', '玄關放櫃子不錯', '玄關放地墊不錯', '玄關放衣架很方便', '玄關可以放椅子'];
+var sentence = ['玄關放鞋櫃不錯', '玄關放鏡子不錯', '玄關放衣服掛勾', '玄關掛鬧鐘很重要', '玄關放櫃子不錯', '玄關放地墊不錯', '玄關放衣架很方便', '玄關可以放椅子'];
 var picture = ['assets/shoeclothet.png','assets/mirror.png','assets/anchor.png','assets/clock.png','assets/clothet.png',
   'assets/floorcover.png','assets/clothhanger.png','assets/chair.png'];
 
