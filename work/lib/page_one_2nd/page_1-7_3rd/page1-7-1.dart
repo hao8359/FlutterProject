@@ -10,8 +10,8 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n休息', '\r\n睡午覺', '\r\n辛苦了', '\r\n感謝', '\r\n放假', '\r\n加油', '\r\n快下班', '\r\n下班了'];
 var sentence = ['我休息一下', '我睡一下午覺', '辛苦了', '感謝你的幫助', '快要放假了', '加油，再撐一下', '要準備下班了', '終於可以下班了'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var picture = ['assets/rest1-transformed.png','assets/rest2-transformed.png','assets/goodjob-transformed.png','assets/thank-transformed.png','assets/holiday-transformed.png',
+  'assets/addoil-transformed.png','assets/dayoff-transformed.png','assets/dayoff2-transformed.png'];
 
 class Page_1_7_1 extends StatefulWidget {
   const Page_1_7_1({Key? key}) : super(key: key);

@@ -11,7 +11,7 @@ import '../../flutter_tts.dart';
 var list = ['\r\n出國', '\r\n國家', '\r\n帶了嗎', '\r\n去幾天', '\r\n訂機酒', '\r\n提早到', '\r\n護照', '\r\n準備'];
 var sentence = ['我想出國旅遊', '你想去什麼國家', '出國要帶的東西帶了嗎', '我們要去幾天', '我來訂班機跟飯店', '要提早到機場', '護照帶了嗎', '都準備好了'];
 var picture = ['assets/airplane.png','assets/world.png','assets/bag2.png','assets/calendar.png','assets/ready.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+  'assets/early-transformed.png','assets/passport-transformed.png','assets/ready-transformed.png'];
 
 class Page_1_8_1 extends StatefulWidget {
   const Page_1_8_1({Key? key}) : super(key: key);

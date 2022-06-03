@@ -10,8 +10,8 @@ import '../../flutter_tts.dart';
 
 var list = ['\r\n投資', '\r\n股票漲', '\r\n慘綠', '\r\n電子股', '\r\n航運股', '\r\n做空', '\r\n股票跌', '\r\n賺錢'];
 var sentence = ['你最僅有什麼投資嗎', '最近那支股票漲了很多', '今天股市慘綠', '電子股好慘', '航運股可以操作一下', '最近很適合做空', '不知道要跌到什麼時候', '有賺到一點錢'];
-var picture = ['assets/education.png','assets/drink.png','assets/education.png','assets/education.png','assets/education.png',
-  'assets/education.png','assets/education.png','assets/education.png'];
+var picture = ['assets/stock2-transformed.png','assets/stockrise-transformed.png','assets/stockfall-transformed.png','assets/stockfall-transformed.png','assets/shipstock-transformed.png',
+  'assets/invast-transformed.png','assets/stockfall-transformed.png','assets/makemoney-transformed.png'];
 
 class Page_1_7_6 extends StatefulWidget {
   const Page_1_7_6({Key? key}) : super(key: key);
