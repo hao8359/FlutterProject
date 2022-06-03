@@ -15,7 +15,7 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import '../socket_tts.dart';
 import '../flutter_tts.dart';
 
-var list = ['\r\n睡覺時間', '\r\n紀錄事項', '\r\n工作類型', '\r\n員工福利', '\r\n人際關係', '\r\n財務投資', '\r\n生涯規劃', '\r\n自我調適'];
+var list = ['\r\休息', '\r\n紀錄', '\r\n類型', '\r\n福利', '\r\n人際', '\r\n投資', '\r\n規劃', '\r\n調適'];
 var sentence = ['', '', '', '', '', '','', ''];
 var picture = ['assets/sleep.png','assets/note.png','assets/worktype.png','assets/benefits.png','assets/social.png',
   'assets/invest.png','assets/lifecareer.png','assets/selfadjust.png'];
