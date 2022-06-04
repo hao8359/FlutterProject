@@ -251,7 +251,7 @@ class Warning extends StatelessWidget {
           child: Icon(Icons.warning),
           onPressed: () {
             print("warning");
-            Text2SpeechFlutter().speak("警告 警告 警告 警告 警告 警告 警告 警告 警告");
+            Text2SpeechFlutter().speak("求救，求救，我需要幫忙，我無法說話");
           },
         ),
       ),
