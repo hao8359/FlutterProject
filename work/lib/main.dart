@@ -123,7 +123,7 @@ class SettingPage extends StatefulWidget {
 class _SettingIndexState extends State<SettingPage> {
   final List<BottomNavigationBarItem> bottomNavItems = [
     BottomNavigationBarItem(
-      backgroundColor: Colors.blue,
+      backgroundColor: Color.fromRGBO(88,178,220,0.8),
       icon: Icon(Icons.insert_emoticon),
       title: Text("常用"),
     ),
@@ -137,21 +137,17 @@ class _SettingIndexState extends State<SettingPage> {
       icon: Icon(Icons.location_on),
       title: Text("地點"),
     ),
-    BottomNavigationBarItem(
-      backgroundColor: Colors.purple,
-      icon: Icon(Icons.keyboard_alt_outlined),
-      title: Text("自行輸入"),
-    ),
     // BottomNavigationBarItem(
     //   backgroundColor: Colors.purple,
-    //   icon: Icon(Icons.person),
-    //   title: Text("測試"),
+    //   icon: Icon(Icons.keyboard_alt_outlined),
+    //   title: Text("自行輸入"),
     // ),
   ];
 
   int currentIndex = 0;
 
-  final pages = [PageFour_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting()];
+  //final pages = [PageFour_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting()];
+  final pages = [PageFour_Setting(), PageTwo_Setting(), PageThree_Setting()];
   //final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting()];
   //final pages = [PageOne_Setting(), PageTwo_Setting(), PageThree_Setting(), PageFour_Setting(), PageFive_Setting()];
   @override
@@ -251,7 +247,7 @@ class Warning extends StatelessWidget {
           child: Icon(Icons.warning),
           onPressed: () {
             print("warning");
-            Text2SpeechFlutter().speak("警告 警告 警告 警告 警告 警告 警告 警告 警告");
+            Text2SpeechFlutter().speak("求救，求救，我需要幫忙，我無法說話");
           },
         ),
       ),
@@ -327,7 +323,7 @@ class Friends extends StatelessWidget {
       decoration: BoxDecoration(
         color: Color(0xFFFF355d5c),
         border:
-            Border(bottom: BorderSide(width: 1.0, color: Color(0xFFFFe5fbef))),
+        Border(bottom: BorderSide(width: 1.0, color: Color(0xFFFFe5fbef))),
       ),
       child: Container(
         padding: const EdgeInsets.all(10.0),

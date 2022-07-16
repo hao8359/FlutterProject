@@ -181,7 +181,7 @@ class _PageFour_Setting extends State<PageFour_Setting> {
                     ),
                     DropdownMenuItem(
                       value: 'secondman',
-                      child: Text('楊先生'),
+                      child: Text('男生二'),
                     ),
                   ],
                 ),
