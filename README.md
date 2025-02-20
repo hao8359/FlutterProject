@@ -1,35 +1,18 @@
-Project Report
-Research Topic
-Voice Assistant App: Daily Life and Medical Applications Advisor: Professor Wen-Hsiang Lu Team Members: De-Zhi Hao, Yan Zhou Development Tools: Android Studio, Flutter Testing Environment: Windows 10, Android Device (Tablet & Phone), AVD Virtual Device Demo Video: Watch here
+# Project Report
 
-Abstract
+## Research Topic
+
+**Voice Assistant App: Daily Life and Medical Applications**
+
+**Advisor:** Professor Wen-Hsiang Lu  
+**Team Members:** De-Chi Hao, Yan Zhou  
+**Development Tools:** Android Studio, Flutter  
+**Testing Environment:** Windows 10, Android Device (Tablet & Phone), AVD Virtual Device  
+**Demo Video:** [Watch here](https://youtu.be/BlwuTGTi4sI)
+
+## Abstract
+
 Each year, an average of 700 patients are diagnosed with throat cancer in Taiwan. For those who undergo vocal cord removal surgery, speaking becomes difficult and uncomfortable. Therefore, a voice assistant device becomes crucial. Additionally, most throat cancer patients in Taiwan are aged between 50-70, making Taiwanese a widely spoken language. However, there is currently no voice assistant app in Taiwanese. This app assists users with no vocal cords or speech difficulties to speak through their phones, allowing them to quickly respond using shortcuts, manually type for immediate responses, and use floating buttons for alert signals to facilitate care.
 
-System Architecture Diagram
-API
-  |
-Word Segmentation
-  |
-Taiwanese Text
-  |
-Taiwanese Translation
-  |
-Text Recognition
-  |
-Speech Synthesis
-  |
-Send Text
-  |
-Return Audio File
-  |
-Socket Matching
-  |
-string -> wav file
-  |
-Text -> Speech
-  |
-Voice Assistant
 
-Figure 3: System Architecture
 
-As shown in Figure 3, the process starts from the bottom with the voice assistant. The user presses a button in the interface to send an internal Chinese sentence to our local Flutter project. During socket matching, our program communicates with Professor Wen-Hsiang Lu's lab server, calling the lab's API. The text is sent to the server, undergoing text recognition, word segmentation, Taiwanese translation, obtaining Taiwanese text, and speech synthesis. The final result is a Taiwanese audio file retrieved from the server and played by the Flutter project.
